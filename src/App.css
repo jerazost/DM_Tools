@@ -2,32 +2,34 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif;
+  background: #ececeb; }
 
 button {
   cursor: pointer; }
 
-.App {
-  text-align: center; }
+.navs {
+  display: flex;
+  justify-content: center; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+.nav {
+  padding: 1.2rem 3.2rem;
+  text-align: center;
+  font-size: 1.6rem; }
+
+.nav:hover {
+  background: #454545;
+  color: #ecf0f1;
+  border-radius: 0 0 20% 20%;
+  cursor: pointer; }
 
 .App-header {
-  background-color: black;
-  height: 150px;
-  padding: 20px;
-  color: white; }
+  background: #454545;
+  color: white;
+  margin: 0;
+  top: 0; }
 
 .App-title {
-  font-size: 1.5em; }
-
-.App-intro {
-  font-size: large; }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+  padding: 3.2rem;
+  margin: 0;
+  text-align: center; }

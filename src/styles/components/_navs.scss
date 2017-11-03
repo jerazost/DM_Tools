@@ -1,0 +1,17 @@
+.navs {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  padding: $s-size $l-size;
+  text-align: center;
+  font-size: $m-size;
+}
+
+.nav:hover {
+  background: $background;
+  color: $light-text;
+  border-radius:  0 0 20% 20%;
+  cursor: pointer;
+}
