@@ -1,3 +1,12 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif; }
+
+button {
+  cursor: pointer; }
+
 .App {
   text-align: center; }
 
@@ -6,7 +15,7 @@
   height: 80px; }
 
 .App-header {
-  background-color: #222;
+  background-color: black;
   height: 150px;
   padding: 20px;
   color: white; }
@@ -16,3 +25,9 @@
 
 .App-intro {
   font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
