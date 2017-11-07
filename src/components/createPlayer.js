@@ -1,4 +1,5 @@
- /* The create player sequence is a series of components
+ /* 
+ 	The create player sequence is a series of components
 	Generated like a form, with things like starting inventory
 	depending on the state of the player (Class/Race)
  */
@@ -13,7 +14,7 @@
 
  //The player chooses from the base SRD Classes
  //The class handler also handles leveling up.
- //Multiple components may be needed for all the classes
+ //Multiple components may be needed for all the classes.
  const ClassLevelPrompt = () => (
  	<div>
  		

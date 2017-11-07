@@ -7,11 +7,11 @@
   padding: $s-size $l-size;
   text-align: center;
   font-size: $m-size;
+  text-decoration: none;
 }
 
 .nav:hover {
-  background: $background;
+  background: lighten($background, 10%);
   color: $light-text;
-  border-radius:  0 0 20% 20%;
   cursor: pointer;
 }

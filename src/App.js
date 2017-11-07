@@ -1,18 +1,11 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import 'normalize.css/normalize.css';
 import './App.css';
-import Navs from './components/navs'
+import AppRouter from './AppRouter';
 
 class App extends Component {
   render() {
-    return (
-      <div>
-         <div className="App-header">
-          <h1 className="App-title">Dungeon Tools</h1>
-        </div>
-        <Navs/>
-      </div>
-    );
+    return AppRouter;
   }
 }
 

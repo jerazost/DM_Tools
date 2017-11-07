@@ -4,13 +4,42 @@
 .App-header {
   background: $background;
   color: white;
-  margin: 0;
+  margin: 0;     
   top: 0;
+  padding: $m-size;
 }
 
 .App-title {
-  padding: $l-size;
-  margin: 0;
+  left: $s-size;
   text-align: center;
+  position: absolute;
 }
 
+.App-body {
+	display: flex;
+}
+
+.search {
+	background: $background;
+	height: 50vh;
+	flex-grow: .15;
+	flex-direction: row;
+}
+
+.search__head {
+	background: lighten($background, 10%);
+	width: 100%;
+	height:	 $l-size;
+	display: flex;
+	justify-content: center;
+	padding: $m-size 0;
+}
+
+.search__head__query {
+	flex-grow: .8;
+	font-size: $m-size;
+	padding: 0.3em;
+	box-shadow: inset 0.0em 0.0em 0.3em #000;
+	border: none;
+
+}
