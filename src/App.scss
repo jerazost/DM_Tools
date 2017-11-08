@@ -1,12 +1,13 @@
 @import 'styles/base/base';
 @import 'styles/components/navs';
 @import 'styles/components/search';
+
 .App-header {
   background: $background;
   color: white;
   margin: 0;     
-  top: 0;
   padding: $m-size;
+  height: $xl-size;
 }
 
 .App-title {
