@@ -9,6 +9,7 @@ button {
   cursor: pointer; }
 
 .navs {
+  height: 3vh;
   display: flex;
   justify-content: center; }
 
@@ -16,31 +17,16 @@ button {
   padding: 1.2rem 3.2rem;
   text-align: center;
   font-size: 1.6rem;
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
 
 .nav:hover {
   background: #5f5f5f;
   color: #ecf0f1;
   cursor: pointer; }
 
-.App-header {
-  background: #454545;
-  color: white;
-  margin: 0;
-  top: 0;
-  padding: 1.6rem; }
-
-.App-title {
-  left: 1.2rem;
-  text-align: center;
-  position: absolute; }
-
-.App-body {
-  display: flex; }
-
 .search {
   background: #454545;
-  height: 50vh;
   flex-grow: .15;
   flex-direction: row; }
 
@@ -58,3 +44,29 @@ button {
   padding: 0.3em;
   box-shadow: inset 0.0em 0.0em 0.3em #000;
   border: none; }
+
+.search__results {
+  overflow: scroll;
+  max-height: 60vh; }
+
+.search__results__result {
+  color: white;
+  text-align: center;
+  border-top: 0.1em solid #121212;
+  font-size: 1.6rem;
+  padding: 1.2rem; }
+
+.App-header {
+  background: #454545;
+  color: white;
+  margin: 0;
+  top: 0;
+  padding: 1.6rem; }
+
+.App-title {
+  left: 1.2rem;
+  text-align: center;
+  position: absolute; }
+
+.App-body {
+  display: flex; }

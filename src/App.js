@@ -1,12 +1,15 @@
-import { Component } from 'react';
-import 'normalize.css/normalize.css';
+import React from 'react';
 import './App.css';
 import AppRouter from './AppRouter';
+import configureStore from './store/configureStore';
+import {Provider} from 'react-redux';
 
-class App extends Component {
-  render() {
-    return AppRouter;
-  }
-}
+const store = configureStore();
+
+const App = () => (
+	<Provider store={store}>
+    	<AppRouter />
+    </Provider>
+  	)
 
 export default App;
