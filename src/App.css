@@ -11,6 +11,9 @@ body {
 button {
   cursor: pointer; }
 
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
 .navs {
   display: flex;
   justify-content: center; }
@@ -274,6 +277,41 @@ button {
     display: flex;
     justify-content: center;
     padding: 3.2rem; }
+
+.alignmentChart {
+  height: 25rem;
+  width: 25rem;
+  background: #ececeb;
+  display: flex; }
+
+.alignmentChart__col {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; }
+
+.alignmentChart__square {
+  border: solid 1px black;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  cursor: pointer; }
+  .alignmentChart__square h1 {
+    margin: 0;
+    align-self: center;
+    position: absolute;
+    color: #a1a19d; }
+
+.alignmentChart__square:hover {
+  background: #555550; }
+  .alignmentChart__square:hover h1 {
+    color: orange; }
+
+.form__ability_score {
+  display: inline; }
+  .form__ability_score button {
+    display: block; }
+  .form__ability_score input {
+    padding: 1.2rem; }
 
 .App-header {
   background: #454545;
