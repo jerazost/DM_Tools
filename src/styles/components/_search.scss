@@ -1,0 +1,73 @@
+@import 'statblock';
+
+.searchPage {
+	display: flex;
+}
+.search {
+	background: $background;
+	flex-basis: auto;
+	flex-direction: row;
+	width: 30vw;
+}
+
+.search__head {
+	background: lighten($background, 10%);
+	width: 100%;
+	min-height:	 $l-size;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.search__head__types {
+	display: flex;
+	justify-content: center;
+
+	div {
+		flex-grow: 1;
+		text-align: center;
+		padding: $s-size;
+		cursor: pointer;
+		color: white;
+		font-size: $m-size;
+	}
+}
+
+.search__head__types--active {
+	background: darken($background, 50%);
+}
+
+.search__head__query {
+	flex-grow: .8;
+	font-size: $m-size;
+	padding: 0.3em;
+	box-shadow: inset 0.0em 0.0em 0.3em #000;
+	border: none;
+}
+
+.search__results {
+	overflow: scroll;
+	height: 73vh;
+}
+
+
+.search__results__result {
+	color: white;
+	border-top: 0.1em solid darken($background, 20%);
+	cursor: pointer;
+	padding: 0.6rem;
+	p { 
+		margin: 0;
+	}
+	h3 {
+		margin: 0 0 0.5rem;
+	}
+}
+
+.search__results__result:hover {
+	background: lighten($background, 10%);
+}
+
+.resultDisplay {
+	background: darken($light-background, 30%);
+	flex-grow: 1;
+}
