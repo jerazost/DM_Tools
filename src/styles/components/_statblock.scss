@@ -3,11 +3,13 @@
   margin: 20px;
   display: inline-block;
   vertical-align: top;
-  width: 17%;
-  min-width:280px;
+  min-width: 17%;
   background: #FDF1DC;
   padding: 5px 10px 20px;
   box-shadow: 0 0 1.5em #867453;
+}
+.stat-block p {
+  font-size: $m-size;
 }
 .stat-block.wide{
   width: 60.5%;

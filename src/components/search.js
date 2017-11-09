@@ -1,52 +1,92 @@
 import React from 'react';
 import {MonsterResultCard, MonsterSearchResult} from './search/monster';
+import {SpellResultCard, SpellSearchResult} from './search/spell';
 
 const MONSTER = 0;
 const SPELL = 1;
 const MAGIC_ITEM = 2;
 
-
-const SpellSearchResult = (props) => (
-	<div className="search__results__result" id={props.id} onClick={props.handleResultClick}>
-		<h3 id={props.id}>{props.name}</h3>
-		<p id={props.id}>{props.level} {props.school}</p>
+const MagicItemResultCard = (props) => (
+	<div id="resultCard">
+		<div className="stat-block">
+			<div className="creature-heading">
+				<h1>{props.name}</h1>
+			</div>
+			<svg height="5" width="100%" className="tapered-rule">
+			    <polyline points="0,0 400,2.5 0,5"></polyline>
+			</svg>
+			<div className="actions">
+				<h3>Description</h3>
+				<p>{props.content || props.table.entries}</p>
+			</div>
+		</div>
 	</div>
 	)
 
-const SpellResultCard = (props) => (
-	<div id="resultCard">
-		<h1> {props.name} </h1>
-        <p> {props.desc} </p>
-        <p> Range: {props.range} </p>
-        <p> Duration: {props.duration} </p>
+const MagicItemSearchResult = (props) => (
+	<div className="search__results__result" id={props.id} onClick={props.handleResultClick}>
+		<h3 id={props.id}>{props.name}</h3>
 	</div>
 	)
 
 class SearchForm extends React.Component {
 	constructor(props) {
 		super(props);
-		const monData = require('../data/monsters.json')
-		const spellData = require('../data/spells.json')
+		const monData = require('../data/monsters.json');
+		const spellData = require('../data/spells.json');
+		const itemData = require('../data/5esrd.json')["Magic Items"];
+		const itemList = [];
+		for (let item in itemData){
+			itemList.push({name: item, ...itemData[item]});
+		}
 		this.state = {
 			searchQuery: '',
 			searchType: MONSTER,
 			monsters: monData,
-			visibleMonsters: monData.map((mon,id) => ({...mon,id: id})),
+			visibleMonsters: monData.map((mon,id) => ({...mon, id: id})),
 			selectedMonster: '',
 			spells: spellData,
-			visibleSpells: spellData.map((spell, id) => ({...spell, id: id})),
-			selectedSpell: ''
+			visibleSpells: spellData.map((spell,id) => ({...spell, id: id})),
+			selectedSpell: '',
+			magicItems: itemList,
+			visibleMagicItems: itemList.map((item, id) => ({...item, id: id})),
+			selectedMagicItem: ''
 		};
 	};
 
 	handleTextChange = (e) => {
 		const searchQuery = e.target.value;
-		this.setState({
-			visibleMonsters: this.state.monsters.filter(monster => {
-				const textMatch = monster.name.toLowerCase().includes(searchQuery.toLowerCase());
-				return textMatch;
-			})
-		});
+		switch(this.state.searchType){
+			case MONSTER:
+				this.setState({
+					visibleMonsters: this.state.monsters.map((mon, id) => ({...mon, id: id})).filter(monster => {
+						const textMatch = monster.name.toLowerCase().includes(searchQuery.toLowerCase());
+						return textMatch;
+					})
+				});
+				break;
+			case SPELL:
+				this.setState({
+					visibleSpells: this.state.spells.map((spell, id) => ({...spell, id: id})).filter(spell => {
+						const textMatch = spell.name.toLowerCase().includes(searchQuery.toLowerCase());
+						return textMatch;
+					})
+				});
+				break;
+			case MAGIC_ITEM:
+				this.setState({
+					visibleMagicItems: this.state.magicItems.map((item, id) => ({...item, id: id})).filter(item => {
+						const textMatch = item.name.toLowerCase().includes(searchQuery.toLowerCase());
+						return textMatch;
+					})
+				});	
+				break;		
+			default: 
+				return undefined;
+
+
+		}
+		
 		console.log(this.state.visibleMonsters.length)
 	};
 
@@ -65,16 +105,20 @@ class SearchForm extends React.Component {
 		switch (this.state.searchType){
 			case MONSTER:
 				this.setState({selectedMonster: this.state.monsters[e.target.id]});
+				console.log(this.state.selectedMonster);
 				break;
 			case SPELL:
 				this.setState({selectedSpell: this.state.spells[e.target.id]});
+				console.log(this.state.selectedSpell);
+				break;
+			case MAGIC_ITEM:
+				this.setState({selectedMagicItem: this.state.magicItems[e.target.id]})
+				console.log(this.state.selectedMagicItem);
 				break;
 			default:
 				return undefined;
-
 		}
 		
-		console.log(e.target.id);
 	};
 
 	render () {
@@ -84,14 +128,14 @@ class SearchForm extends React.Component {
 					<div className="search__head">
 						<div className="search__head__types">
 							<div className=
-							{this.state.searchType === MONSTER && "search__head__types--active"}
+							{this.state.searchType === MONSTER ? "search__head__types--active" : ''}
 							onClick={this.typeToMonster}
 							>Monsters</div>
 							<div className=
-							{this.state.searchType === SPELL && "search__head__types--active"}
+							{this.state.searchType === SPELL ? "search__head__types--active" : ''}
 							onClick={this.typeToSpell}>Spells</div>
 							<div className=
-							{this.state.searchType === MAGIC_ITEM && "search__head__types--active"}
+							{this.state.searchType === MAGIC_ITEM ? "search__head__types--active": ''}
 							onClick={this.typeToMagicItem}>Items</div>
 						</div>
 						<input 
@@ -122,6 +166,16 @@ class SearchForm extends React.Component {
 									)
 								})
 					}
+					{this.state.searchType === MAGIC_ITEM 
+						&& this.state.visibleMagicItems.map((item, i) => {
+									return (
+										<MagicItemSearchResult
+										key={i} id={item.id}
+										handleResultClick={this.handleResultClick}
+										{...item}/>
+									)
+								})
+					}
 					</div>
 				</div>
 				<div className="resultDisplay">
@@ -132,7 +186,9 @@ class SearchForm extends React.Component {
 				{this.state.searchType === SPELL &&
 				 this.state.selectedSpell &&
 				  <SpellResultCard {...this.state.selectedSpell} />}
-
+				{this.state.searchType === MAGIC_ITEM &&
+				 this.state.selectedMagicItem &&
+				  <MagicItemResultCard {...this.state.selectedMagicItem} />}
 				</div>
 			</div>
 			

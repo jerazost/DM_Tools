@@ -32,11 +32,13 @@ button {
   margin: 20px;
   display: inline-block;
   vertical-align: top;
-  width: 17%;
-  min-width: 280px;
+  min-width: 17%;
   background: #FDF1DC;
   padding: 5px 10px 20px;
   box-shadow: 0 0 1.5em #867453; }
+
+.stat-block p {
+  font-size: 1.6rem; }
 
 .stat-block.wide {
   width: 60.5%;
@@ -212,7 +214,6 @@ button {
 
 .search {
   background: #454545;
-  flex-basis: auto;
   flex-direction: row;
   width: 30vw; }
 
@@ -241,19 +242,21 @@ button {
 .search__head__query {
   flex-grow: .8;
   font-size: 1.6rem;
+  min-height: 3.2rem;
   padding: 0.3em;
   box-shadow: inset 0.0em 0.0em 0.3em #000;
   border: none; }
 
 .search__results {
-  overflow: scroll;
-  height: 73vh; }
+  overflow-y: scroll;
+  height: 100%; }
 
 .search__results__result {
   color: white;
   border-top: 0.1em solid #121212;
   cursor: pointer;
-  padding: 0.6rem; }
+  padding: 0.6rem;
+  font-size: 1.6rem; }
   .search__results__result p {
     margin: 0; }
   .search__results__result h3 {
@@ -264,7 +267,13 @@ button {
 
 .resultDisplay {
   background: #a1a19d;
-  flex-grow: 1; }
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .resultDisplay .resultCard {
+    display: flex;
+    justify-content: center;
+    padding: 3.2rem; }
 
 .App-header {
   background: #454545;

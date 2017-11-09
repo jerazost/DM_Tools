@@ -13232,7 +13232,6 @@
         }
     },
     "Magic Items": {
-        "content": "Magic items are presented in alphabetical order. A magic item’s description gives the item’s name, its category, its rarity, and its magical properties.",
         "Adamantine Armor": {
             "content": [
                 "*Armor (medium or heavy, but not hide), uncommon*",

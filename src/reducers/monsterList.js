@@ -6,7 +6,7 @@ export default (state = monsterListReducerDefaultState, action) => {
 			return [...state, action.customMonster];
 		case 'REMOVE_CUSTOM_MONSTER':
 			return state.filter(mon => {
-				mon.id != action.id
+				return mon.id !== action.id
 			});
 		default: 
 			return state;
