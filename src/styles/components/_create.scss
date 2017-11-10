@@ -1,0 +1,116 @@
+.createPage {
+	padding: $l-size;
+}
+.createPage__select{ 
+	display: flex;
+	flex-direction: row;
+	h1 {
+		margin-right: $l-size;
+		cursor: pointer;
+		padding: $s-size $m-size;
+	}
+}
+.createPage__select__option--active {
+	background: $background;
+	color: $light-text;
+	order: -1;
+}
+.createName {
+	background: none;
+	border: none;
+	border-bottom: solid 2px $background;
+	font-size: $l-size;
+}
+.createSubmit {
+	position: absolute;
+	bottom: $l-size;
+	margin: 0;
+	left: 40%;
+	padding: $m-size;
+	font-size: $m-size;
+	background: $background;
+	color: orange;
+	font-weight: 550;
+}
+.alignmentChart{
+	height: 25rem;
+	width: 25rem;
+	background: $light-background;
+	display: flex;
+
+}
+.alignmentChart__col{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+.alignmentChart__square{
+	border: solid 1px $background;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	h1 {
+		margin: 0;
+		align-self: center;
+		position: absolute;
+		color: darken($light-background, 30%);
+	}
+}
+.alignmentChart__square--active {
+	background: darken($light-background, 60%);
+	h1 {
+		color: orange;
+	}
+}
+.alignmentChart__square:hover {
+	background: darken($light-background, 40%);
+	h1 {
+		color: orange;
+	}
+}
+.abilityScores{
+	margin: $m-size 0;
+	display:flex;
+	flex-direction: row;
+}
+.form__container{
+	flex-grow:1;
+	text-align: center;
+	color: white;
+}
+.form__ability_score{
+	background: $background;
+	padding: $m-size;
+	h3 {
+		margin-top: 0;
+	}
+	h2 {
+		display: inline;
+		padding: 0 $s-size;
+	}
+	button {
+		display: inline;
+	}
+}
+.form__row {
+	display: flex;
+}
+.form__col {
+	flex-grow: 1;
+}
+.actionPrompt {
+	padding: $m-size;
+	background: $background;
+	input {
+		display: block;
+		margin-top: $s-size;
+	}
+}
+.actionHeader {
+	h2 {
+		display: inline;
+		margin-right:$m-size;
+	}
+	
+}
