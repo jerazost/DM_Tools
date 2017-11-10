@@ -7,7 +7,7 @@ import {Provider} from 'react-redux';
 const store = configureStore();
 
 store.subscribe(() => {
-	console.log(store.getState().monsterCreate);
+	console.log(store.getState());
 });
 
 const App = () => (

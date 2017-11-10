@@ -275,6 +275,9 @@ button {
     justify-content: center;
     padding: 3.2rem; }
 
+.createPage {
+  padding: 3.2rem; }
+
 .alignmentChart {
   height: 25rem;
   width: 25rem;
@@ -309,22 +312,38 @@ button {
     color: orange; }
 
 .abilityScores {
+  margin: 1.6rem 0;
   display: flex;
   flex-direction: row; }
 
 .form__container {
-  padding: 1.6rem;
   flex-grow: 1;
   text-align: center;
   color: white; }
 
 .form__ability_score {
-  background: #454545; }
+  background: #454545;
+  padding: 1.6rem; }
+  .form__ability_score h3 {
+    margin-top: 0; }
   .form__ability_score h2 {
     display: inline;
-    padding: 2rem; }
+    padding: 0 1.2rem; }
   .form__ability_score button {
     display: inline; }
+
+.form__row {
+  display: flex; }
+
+.form__col {
+  flex-grow: 1; }
+
+.actionPrompt {
+  padding: 1.6rem;
+  background: #454545; }
+  .actionPrompt input {
+    display: block;
+    margin-top: 1.2rem; }
 
 .App-header {
   background: #454545;
