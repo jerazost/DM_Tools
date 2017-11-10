@@ -13,6 +13,9 @@ body {
 button {
 	cursor: pointer;
 }
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }

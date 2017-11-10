@@ -4,8 +4,11 @@ import AppRouter from './AppRouter';
 import configureStore from './store/configureStore';
 import {Provider} from 'react-redux';
 
-
 const store = configureStore();
+
+store.subscribe(() => {
+	console.log(store.getState());
+});
 
 const App = () => (
 	<Provider store={store}>

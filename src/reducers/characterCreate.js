@@ -48,7 +48,6 @@ const characterReducerDefaultState = {
 	condition_immunities: {},
 	senses: {},
 	languages: {},
-	challenge_rating: 0,
 	special_abilities: [],
 	actions: [],
 	equipment: []

@@ -20,7 +20,6 @@ const monsterCreateReducerDefaultState = {
 	intelligence_save: 0,
 	wisdom_save: 0,
 	charisma_save: 0,
-	wisdom_save: 0,
 	skills: {
 		athletics: 0,
 		acrobatics: 0,
@@ -51,4 +50,13 @@ const monsterCreateReducerDefaultState = {
 	special_abilities: [],
 	actions: [],
 	legendary_actions: []
+}
+
+export default (state = monsterCreateReducerDefaultState, action) => {
+	switch (action.type) {
+		case "EDIT_MONSTER":
+			return {...state, ...action.monster};
+		default: 
+			return state;
+	}
 }
