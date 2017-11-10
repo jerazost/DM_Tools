@@ -11,6 +11,12 @@ body {
 button {
   cursor: pointer; }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
 .navs {
   display: flex;
   justify-content: center; }
@@ -277,6 +283,25 @@ button {
 
 .createPage {
   padding: 3.2rem; }
+
+.createPage__select {
+  display: flex;
+  flex-direction: row; }
+  .createPage__select h1 {
+    margin-right: 3.2rem;
+    cursor: pointer;
+    padding: 1.2rem 1.6rem; }
+
+.createPage__select__option--active {
+  background: #454545;
+  color: #ecf0f1;
+  order: -1; }
+
+.createName {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #454545;
+  font-size: 3.2rem; }
 
 .alignmentChart {
   height: 25rem;
