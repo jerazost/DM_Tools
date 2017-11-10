@@ -24,7 +24,6 @@ export default class Create extends React.Component {
 			{this.state.activeState === 'MONSTER' && <CreateMonsterForm />}
 			{this.state.activeState === 'PLAYER' && <CreatePlayerForm />}
 			{this.state.activeState === 'ITEM' && <CreateItemForm />}
-
 			</div>
 		)
 	}

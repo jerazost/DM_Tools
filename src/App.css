@@ -303,6 +303,17 @@ button:focus {
   border-bottom: solid 2px #454545;
   font-size: 3.2rem; }
 
+.createSubmit {
+  position: absolute;
+  bottom: 3.2rem;
+  margin: 0;
+  left: 40%;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  background: #454545;
+  color: orange;
+  font-weight: 550; }
+
 .alignmentChart {
   height: 25rem;
   width: 25rem;
@@ -315,7 +326,7 @@ button:focus {
   flex-direction: column; }
 
 .alignmentChart__square {
-  border: solid 1px black;
+  border: solid 1px #454545;
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -369,6 +380,10 @@ button:focus {
   .actionPrompt input {
     display: block;
     margin-top: 1.2rem; }
+
+.actionHeader h2 {
+  display: inline;
+  margin-right: 1.6rem; }
 
 .App-header {
   background: #454545;
