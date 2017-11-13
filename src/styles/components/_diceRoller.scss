@@ -1,0 +1,31 @@
+.dice {
+	padding: 50px;
+}
+.diceRoller {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.diceRoller__buttons {
+	display: flex;
+	flex-direction: column;
+	button {
+		padding: $m-size;
+		width: 6rem;
+	}
+}
+
+.diceRoller__history {
+	background: $background;
+	flex-grow: .2;
+	p {
+		color: white;
+		font-size: $m-size;
+		text-align: center;
+		margin: 0;
+		padding: $s-size;
+	}
+	p:last-child {
+		background: lighten($background, 20%);
+	}
+}
