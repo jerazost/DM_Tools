@@ -28,7 +28,8 @@ A good fantasy setting should feel immersive and concrete. As a dungeon master o
 8. Loot Generator - [Not Started]
 9. Building Generator - [Not Started]
 10. Combat Tracker - [Not Started]
-11. NPC Generator - [Not Started]
+11. NPC Generator - [In-Progress]
+12. Dice Roller - [working]
 
 ## Installation
 
