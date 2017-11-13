@@ -17,10 +17,10 @@
 	flex-direction: column;
 	justify-content: center;
 }
+
 .search__head__types {
 	display: flex;
 	justify-content: center;
-
 	div {
 		flex-grow: 1;
 		text-align: center;
@@ -46,9 +46,8 @@
 
 .search__results {
 	overflow-y: scroll;
-	height: 100%;
+	height: 83vh;
 }
-
 
 .search__results__result {
 	color: white;

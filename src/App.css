@@ -255,7 +255,7 @@ button:focus {
 
 .search__results {
   overflow-y: scroll;
-  height: 100%; }
+  height: 83vh; }
 
 .search__results__result {
   color: white;

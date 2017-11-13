@@ -12,8 +12,8 @@ const AppRouter = () => (
           <div className="App-body">
 			  <Switch>
 	          	<Route path='/reference' component={Search}/>
-	          	<Route path='/create' component={Create}/>
 	          	<Route path='/play' component={Play}/>
+	          	<Route path='/create' component={Create}/>
 	          </Switch>
           </div>
 		</div>

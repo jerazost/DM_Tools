@@ -1,6 +1,8 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {MonsterResultCard, MonsterSearchResult} from './search/monster';
 import {SpellResultCard, SpellSearchResult} from './search/spell';
+import {updateReference} from '../actions/reference';
 
 const MONSTER = 0;
 const SPELL = 1;
@@ -29,42 +31,36 @@ const MagicItemSearchResult = (props) => (
 	</div>
 	)
 
+const mapStateToProps = state => {
+	return {
+		reference: state.reference
+	}
+}
+
+const mapDispatchToProps = dispatch => {
+	return {
+		updateReference: reference => {
+			dispatch(updateReference(reference));
+		}
+	}
+}
+
 class SearchForm extends React.Component {
 	constructor(props) {
 		super(props);
-		const monData = require('../data/monsters.json');
-		const spellData = require('../data/spells.json');
-		const itemData = require('../data/5esrd.json')["Magic Items"];
-		const test = require('../data/5esrd.json');
-		console.log(test);
-		const itemList = [];
-		for (let item in itemData){
-			itemList.push({name: item, ...itemData[item]});
-		}
-		this.state = {
-			searchQuery: '',
-			searchType: MONSTER,
-			monsters: monData,
-			visibleMonsters: monData.map((mon,id) => ({...mon, id: id})),
-			selectedMonster: '',
-			spells: spellData,
-			visibleSpells: spellData.map((spell,id) => ({...spell, id: id})),
-			selectedSpell: '',
-			magicItems: itemList,
-			visibleMagicItems: itemList.map((item, id) => ({...item, id: id})),
-			selectedMagicItem: ''
-		};
+		this.state = props.reference;
 	};
 
 	handleTextChange = (e) => {
 		const searchQuery = e.target.value;
+		this.setState({searchQuery}, () => {this.props.updateReference(this.state)});
 		switch(this.state.searchType){
 			case MONSTER:
 				this.setState({
 					visibleMonsters: this.state.monsters.map((mon, id) => ({...mon, id: id})).filter(monster => {
 						const textMatch = monster.name.toLowerCase().includes(searchQuery.toLowerCase());
 						return textMatch;
-					})
+					}, () => {this.props.updateReference(this.state)})
 				});
 				break;
 			case SPELL:
@@ -73,7 +69,7 @@ class SearchForm extends React.Component {
 						const textMatch = spell.name.toLowerCase().includes(searchQuery.toLowerCase());
 						return textMatch;
 					})
-				});
+				}, () => {this.props.updateReference(this.state)});
 				break;
 			case MAGIC_ITEM:
 				this.setState({
@@ -81,15 +77,11 @@ class SearchForm extends React.Component {
 						const textMatch = item.name.toLowerCase().includes(searchQuery.toLowerCase());
 						return textMatch;
 					})
-				});	
+				}, () => {this.props.updateReference(this.state)});	
 				break;		
 			default: 
 				return undefined;
-
-
 		}
-		
-		console.log(this.state.visibleMonsters.length)
 	};
 
 	typeToMonster = (e) => {
@@ -104,23 +96,22 @@ class SearchForm extends React.Component {
 
 	handleResultClick = (e) => {
 		e.stopPropagation();
-		switch (this.state.searchType){
+		switch (this.state.searchType) {
 			case MONSTER:
-				this.setState({selectedMonster: this.state.monsters[e.target.id]});
-				console.log(this.state.selectedMonster);
+				this.setState({selectedMonster: this.state.monsters[e.target.id]}, () => {this.props.updateReference(this.state)});
+
 				break;
 			case SPELL:
-				this.setState({selectedSpell: this.state.spells[e.target.id]});
-				console.log(this.state.selectedSpell);
+				this.setState({selectedSpell: this.state.spells[e.target.id]}, () => {this.props.updateReference(this.state)});
+	
 				break;
 			case MAGIC_ITEM:
-				this.setState({selectedMagicItem: this.state.magicItems[e.target.id]})
-				console.log(this.state.selectedMagicItem);
+				this.setState({selectedMagicItem: this.state.magicItems[e.target.id]}, () => {this.props.updateReference(this.state)})
+
 				break;
 			default:
 				return undefined;
 		}
-		
 	};
 
 	render () {
@@ -144,6 +135,7 @@ class SearchForm extends React.Component {
 						type="text"
 						placeholder="Search"
 						className="search__head__query"
+						value={this.state.searchQuery}
 						onChange={this.handleTextChange}
 						/>
 					</div>
@@ -198,4 +190,4 @@ class SearchForm extends React.Component {
 	}
 }
  
-export default SearchForm;
+export default connect(mapStateToProps, mapDispatchToProps)(SearchForm);
