@@ -2,34 +2,12 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {MonsterResultCard, MonsterSearchResult} from './search/monster';
 import {SpellResultCard, SpellSearchResult} from './search/spell';
+import {MagicItemResultCard, MagicItemSearchResult} from './search/magicItem';
 import {updateReference} from '../actions/reference';
 
 const MONSTER = 0;
 const SPELL = 1;
 const MAGIC_ITEM = 2;
-
-const MagicItemResultCard = (props) => (
-	<div id="resultCard">
-		<div className="stat-block">
-			<div className="creature-heading">
-				<h1>{props.name}</h1>
-			</div>
-			<svg height="5" width="100%" className="tapered-rule">
-			    <polyline points="0,0 400,2.5 0,5"></polyline>
-			</svg>
-			<div className="actions">
-				<h3>Description</h3>
-				<p>{props.content || props.table.entries}</p>
-			</div>
-		</div>
-	</div>
-	)
-
-const MagicItemSearchResult = (props) => (
-	<div className="search__results__result" id={props.id} onClick={props.handleResultClick}>
-		<h3 id={props.id}>{props.name}</h3>
-	</div>
-	)
 
 const mapStateToProps = state => {
 	return {
@@ -51,33 +29,28 @@ class SearchForm extends React.Component {
 		this.state = props.reference;
 	};
 
+	updateVisible = (type, searchQuery) => {
+		this.setState({
+					visibleMonsters: 
+					this.state[type].map((el, id) => 
+						({...el, id: id})).filter(el => {
+							const textMatch = type.name.toLowerCase().includes(searchQuery.toLowerCase());
+							return textMatch;
+						}, () => {this.props.updateReference(this.state)})
+				});
+	}
 	handleTextChange = (e) => {
 		const searchQuery = e.target.value;
 		this.setState({searchQuery}, () => {this.props.updateReference(this.state)});
 		switch(this.state.searchType){
 			case MONSTER:
-				this.setState({
-					visibleMonsters: this.state.monsters.map((mon, id) => ({...mon, id: id})).filter(monster => {
-						const textMatch = monster.name.toLowerCase().includes(searchQuery.toLowerCase());
-						return textMatch;
-					}, () => {this.props.updateReference(this.state)})
-				});
+				this.updateVisible("monster", searchQuery);
 				break;
 			case SPELL:
-				this.setState({
-					visibleSpells: this.state.spells.map((spell, id) => ({...spell, id: id})).filter(spell => {
-						const textMatch = spell.name.toLowerCase().includes(searchQuery.toLowerCase());
-						return textMatch;
-					})
-				}, () => {this.props.updateReference(this.state)});
+				this.updateVisible("spell", searchQuery);
 				break;
 			case MAGIC_ITEM:
-				this.setState({
-					visibleMagicItems: this.state.magicItems.map((item, id) => ({...item, id: id})).filter(item => {
-						const textMatch = item.name.toLowerCase().includes(searchQuery.toLowerCase());
-						return textMatch;
-					})
-				}, () => {this.props.updateReference(this.state)});	
+				this.updateVisible("magicItem", searchQuery);
 				break;		
 			default: 
 				return undefined;

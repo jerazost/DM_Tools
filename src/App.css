@@ -47,7 +47,7 @@ button:focus {
   font-size: 1.6rem; }
 
 .stat-block.wide {
-  width: 60.5%;
+  width: 80.5%;
   min-width: 560px;
   text-align: center; }
 
@@ -279,7 +279,7 @@ button:focus {
   .resultDisplay .resultCard {
     display: flex;
     justify-content: center;
-    padding: 3.2rem; }
+    padding: 1.2rem; }
 
 .createPage {
   padding: 3.2rem; }
