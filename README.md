@@ -21,7 +21,7 @@ A good fantasy setting should feel immersive and concrete. As a dungeon master o
 1. Monster Search - [Working]
 2. Spell Search - [Working]
 3. Magic Item Search - [Working]
-4. Create Monster - [In-Progress]
+4. Create Monster - [Working]
 5. Create Spell - [In-Progress]
 6. Create Magic Item - [In-Progress]
 7. Create Playable Character - [In-Progress]

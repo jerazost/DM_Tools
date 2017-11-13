@@ -39,7 +39,11 @@ export default class Actions extends React.Component {
 	render() {
 		const actions = [];
 		this.state.actions.forEach((action, i) => {
-			actions.push(<ActionPrompt key={i} index={i} handleActionName={this.handleActionName} handleActionDesc={this.handleActionDesc}name={action.name} desc={action.desc}/>);
+			actions.push(
+				<ActionPrompt key={i} index={i} 
+				handleActionName={this.handleActionName} 
+				handleActionDesc={this.handleActionDesc}
+				name={action.name} desc={action.desc}/>);
 		});
 		return (
 			<div className="form__col actionHeader">

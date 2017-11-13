@@ -19,15 +19,15 @@ export const MonsterResultCard = (props) => (
 			  </svg>
 				<div className="top-stats">
 					<div className="property-line first">
-						<h4>Armor ClassName</h4>
-						<p>{props.armor_className}</p>
+						<h4>Armor Class </h4>
+						<p>{props.armor_class}</p>
 					</div> 
 					<div className="property-line">
-						<h4>Hit Points</h4>
+						<h4>Hit Points </h4>
 						<p>{props.hit_points} ({props.hit_dice})</p>
 					</div> 
 					<div className="property-line last">
-						<h4>Speed</h4>
+						<h4>Speed </h4>
 						<p>{props.speed}</p>
 					</div> 
 					<svg height="5" width="100%" className="tapered-rule">

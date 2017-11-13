@@ -385,6 +385,32 @@ button:focus {
   display: inline;
   margin-right: 1.6rem; }
 
+.dice {
+  padding: 50px; }
+
+.diceRoller {
+  display: flex;
+  justify-content: flex-start; }
+
+.diceRoller__buttons {
+  display: flex;
+  flex-direction: column; }
+  .diceRoller__buttons button {
+    padding: 1.6rem;
+    width: 6rem; }
+
+.diceRoller__history {
+  background: #454545;
+  flex-grow: .2; }
+  .diceRoller__history p {
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0;
+    padding: 1.2rem; }
+  .diceRoller__history p:last-child {
+    background: #787878; }
+
 .App-header {
   background: #454545;
   color: white;
