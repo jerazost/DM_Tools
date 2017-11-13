@@ -1,7 +1,7 @@
 import React from 'react';
 import {AlignmentChart} from './form/alignment';
 import AbilityScores from './form/abilityScores';
-import {FormSize, FormName} from './form/formMisc';
+import {FormName} from './form/formMisc';
 
 class CreatePlayerForm extends React.Component {
 	constructor (props) {
@@ -16,7 +16,6 @@ class CreatePlayerForm extends React.Component {
 				<AlignmentChart/>
 			</div>
 			)
-		
 	}
 }
 
