@@ -22,14 +22,15 @@ A good fantasy setting should feel immersive and concrete. As a dungeon master o
 2. Spell Search - [Working]
 3. Magic Item Search - [Working]
 4. Create Monster - [Working]
-5. Create Spell - [In-Progress]
-6. Create Magic Item - [In-Progress]
-7. Create Playable Character - [In-Progress]
+5. Create Spell - [In Progress]
+6. Create Magic Item - [In Progress]
+7. Create Playable Character - [In Progress]
 8. Loot Generator - [Not Started]
 9. Building Generator - [Not Started]
-10. Combat Tracker - [Not Started]
-11. NPC Generator - [In-Progress]
-12. Dice Roller - [working]
+10. Combat Tracker - [In Progress]
+11. NPC Generator - [In Progress]
+12. Dice Roller - [Working]
+13. Store Inventory Generator - [Not Started]
 
 ## Installation
 
