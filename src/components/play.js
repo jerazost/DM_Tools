@@ -12,7 +12,8 @@ class Play extends React.Component {
 	}
 
 	handleActiveChange = e =>  {
-		const newPlay = e.target.dataset.play
+		const newPlay = e.target.dataset.play;
+		this.setState({activePlay: newPlay});
 	}
 
 	render() {

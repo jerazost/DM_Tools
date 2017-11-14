@@ -10,6 +10,8 @@ const MONSTER = 0;
 const SPELL = 1;
 const MAGIC_ITEM = 2;
 
+const uuidv4 = require('uuid/v4');
+
 const mapStateToProps = state => {
 	return {
 		reference: state.reference
@@ -93,8 +95,9 @@ class SearchForm extends React.Component {
 		}
 	};
 	handleAddEntity = (e) => {
-		console.log(this.state.selectedMonster);
-		this.props.addEntity(this.state.selectedMonster);
+		const entity = {...this.state.selectedMonster};
+		entity.uid = uuidv4();
+		this.props.addEntity(entity);
 	}
 
 	render () {

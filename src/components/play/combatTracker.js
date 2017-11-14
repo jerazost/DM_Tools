@@ -16,17 +16,15 @@ const mapDispatchToProps = dispatch => ({
 
 
 class CombatTracker extends React.Component {
-	constructor(props){
-		super(props);
-	};
 
 	handleRemoveEntity = e => {
+		e.stopPropagation();
 		const uid = e.target.dataset.uid;
-		const entities = [...this.props.combatEntities];
 		this.props.removeEntity(uid);
 	};
 
 	handleIncDec = (e) => {
+		e.stopPropagation();
 		const index = e.target.dataset.index;
 		const type = e.target.dataset.type;
 		const entities = [...this.props.combatEntities];
