@@ -1,4 +1,5 @@
 import React from 'react';
+
 export const MonsterSearchResult = (props) => (
 	<div className="search__results__result" id={props.id} onClickCapture={props.handleResultClick}>
 		<h3 id={props.id}>{props.name}</h3>
@@ -15,8 +16,8 @@ export const MonsterResultCard = (props) => (
 					<h2>{props.size} {props.type}, {props.alignment}</h2>
 				</div> 
 				<svg height="5" width="100%" className="tapered-rule">
-			    <polyline points="0,0 400,2.5 0,5"></polyline>
-			  </svg>
+			   	 <polyline points="0,0 400,2.5 0,5"></polyline>
+			  	</svg>
 				<div className="top-stats">
 					<div className="property-line first">
 						<h4>Armor Class </h4>
@@ -104,6 +105,7 @@ export const MonsterResultCard = (props) => (
 					</div> 
 			  		))
 			  }
+			  <button onClick={props.add}>Add to combat</button>
 			</div> 
 			<div className="section-right">
 				{

@@ -1,0 +1,23 @@
+.tracker {
+	padding: $s-size;
+	padding-right: $l-size;
+}
+.monsterTracker {
+	padding: $s-size;
+	display: flex;
+	flex-wrap: wrap;
+}
+.monsterTracker__Card {
+	button {
+		float: right;
+	}
+
+}
+.monsterTracker__Card__HP {
+	display: flex;
+	padding: $m-size;
+	justify-content: space-around;
+	h1 {
+		text-align: center;
+	}
+}

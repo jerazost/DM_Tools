@@ -4,6 +4,7 @@ import {MonsterResultCard, MonsterSearchResult} from './search/monster';
 import {SpellResultCard, SpellSearchResult} from './search/spell';
 import {MagicItemResultCard, MagicItemSearchResult} from './search/magicItem';
 import {updateReference} from '../actions/reference';
+import {addCombatEntity} from '../actions/combat';
 
 const MONSTER = 0;
 const SPELL = 1;
@@ -19,6 +20,9 @@ const mapDispatchToProps = dispatch => {
 	return {
 		updateReference: reference => {
 			dispatch(updateReference(reference));
+		},
+		addEntity: entity => {
+			dispatch(addCombatEntity(entity));
 		}
 	}
 }
@@ -34,23 +38,24 @@ class SearchForm extends React.Component {
 					visibleMonsters: 
 					this.state[type].map((el, id) => 
 						({...el, id: id})).filter(el => {
-							const textMatch = type.name.toLowerCase().includes(searchQuery.toLowerCase());
+							const textMatch = el.name.toLowerCase().includes(searchQuery.toLowerCase());
 							return textMatch;
 						}, () => {this.props.updateReference(this.state)})
 				});
-	}
+	};
+
 	handleTextChange = (e) => {
 		const searchQuery = e.target.value;
 		this.setState({searchQuery}, () => {this.props.updateReference(this.state)});
 		switch(this.state.searchType){
 			case MONSTER:
-				this.updateVisible("monster", searchQuery);
+				this.updateVisible("monsters", searchQuery);
 				break;
 			case SPELL:
-				this.updateVisible("spell", searchQuery);
+				this.updateVisible("spells", searchQuery);
 				break;
 			case MAGIC_ITEM:
-				this.updateVisible("magicItem", searchQuery);
+				this.updateVisible("magicItems", searchQuery);
 				break;		
 			default: 
 				return undefined;
@@ -71,21 +76,26 @@ class SearchForm extends React.Component {
 		e.stopPropagation();
 		switch (this.state.searchType) {
 			case MONSTER:
-				this.setState({selectedMonster: this.state.monsters[e.target.id]}, () => {this.props.updateReference(this.state)});
-
+				this.setState({selectedMonster: this.state.monsters[e.target.id]},
+				 () => {this.props.updateReference(this.state)});
 				break;
 			case SPELL:
-				this.setState({selectedSpell: this.state.spells[e.target.id]}, () => {this.props.updateReference(this.state)});
-	
+				this.setState({selectedSpell: this.state.spells[e.target.id]},
+				 () => {this.props.updateReference(this.state)});
+
 				break;
 			case MAGIC_ITEM:
-				this.setState({selectedMagicItem: this.state.magicItems[e.target.id]}, () => {this.props.updateReference(this.state)})
-
+				this.setState({selectedMagicItem: this.state.magicItems[e.target.id]},
+				 () => {this.props.updateReference(this.state)})
 				break;
 			default:
 				return undefined;
 		}
 	};
+	handleAddEntity = (e) => {
+		console.log(this.state.selectedMonster);
+		this.props.addEntity(this.state.selectedMonster);
+	}
 
 	render () {
 		return(
@@ -94,14 +104,17 @@ class SearchForm extends React.Component {
 					<div className="search__head">
 						<div className="search__head__types">
 							<div className=
-							{this.state.searchType === MONSTER ? "search__head__types--active" : ''}
+							{this.state.searchType === MONSTER ? 
+								"search__head__types--active" : ''}
 							onClick={this.typeToMonster}
 							>Monsters</div>
 							<div className=
-							{this.state.searchType === SPELL ? "search__head__types--active" : ''}
+							{this.state.searchType === SPELL ? 
+								"search__head__types--active" : ''}
 							onClick={this.typeToSpell}>Spells</div>
 							<div className=
-							{this.state.searchType === MAGIC_ITEM ? "search__head__types--active": ''}
+							{this.state.searchType === MAGIC_ITEM ? 
+								"search__head__types--active": ''}
 							onClick={this.typeToMagicItem}>Items</div>
 						</div>
 						<input 
@@ -149,7 +162,7 @@ class SearchForm extends React.Component {
 
 				{this.state.searchType === MONSTER &&
 				 this.state.selectedMonster &&
-				  <MonsterResultCard {...this.state.selectedMonster} />}
+				  <MonsterResultCard {...this.state.selectedMonster} add={this.handleAddEntity}/>}
 				{this.state.searchType === SPELL &&
 				 this.state.selectedSpell &&
 				  <SpellResultCard {...this.state.selectedSpell} />}

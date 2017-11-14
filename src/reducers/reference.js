@@ -1,13 +1,11 @@
 const monData = require('../data/monsters.json');
 const spellData = require('../data/spells.json');
 const itemData = require('../data/5esrd.json')["Magic Items"];
-const test = require('../data/5esrd.json');
-console.log(test);
 const itemList = [];
+
 for (let item in itemData){
 	itemList.push({name: item, ...itemData[item]});
 }
-
 
 const referenceDefaultState = {
 	searchQuery: '',

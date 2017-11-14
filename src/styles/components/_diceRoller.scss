@@ -1,5 +1,9 @@
 .dice {
-	padding: 50px;
+	padding: $s-size;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1;
 }
 .diceRoller {
 	display: flex;
@@ -17,7 +21,7 @@
 
 .diceRoller__history {
 	background: $background;
-	flex-grow: .2;
+	width: 15rem;
 	p {
 		color: white;
 		font-size: $m-size;

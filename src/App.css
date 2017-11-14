@@ -386,7 +386,11 @@ button:focus {
   margin-right: 1.6rem; }
 
 .dice {
-  padding: 50px; }
+  padding: 1.2rem;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1; }
 
 .diceRoller {
   display: flex;
@@ -401,7 +405,7 @@ button:focus {
 
 .diceRoller__history {
   background: #454545;
-  flex-grow: .2; }
+  width: 15rem; }
   .diceRoller__history p {
     color: white;
     font-size: 1.6rem;
@@ -410,6 +414,25 @@ button:focus {
     padding: 1.2rem; }
   .diceRoller__history p:last-child {
     background: #787878; }
+
+.tracker {
+  padding: 1.2rem;
+  padding-right: 3.2rem; }
+
+.monsterTracker {
+  padding: 1.2rem;
+  display: flex;
+  flex-wrap: wrap; }
+
+.monsterTracker__Card button {
+  float: right; }
+
+.monsterTracker__Card__HP {
+  display: flex;
+  padding: 1.6rem;
+  justify-content: space-around; }
+  .monsterTracker__Card__HP h1 {
+    text-align: center; }
 
 .App-header {
   background: #454545;
