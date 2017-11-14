@@ -11,8 +11,17 @@
 	button {
 		float: right;
 	}
-
 }
+.monsterTracker__Card__ToggleView {
+	display: none;
+}
+.monsterTracker__Card:hover {
+
+	.monsterTracker__Card__ToggleView {
+		display:block;
+	}
+}
+
 .monsterTracker__Card__HP {
 	display: flex;
 	padding: $m-size;

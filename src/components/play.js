@@ -11,10 +11,16 @@ class Play extends React.Component {
 		}
 	}
 
+	handleActiveChange = e =>  {
+		const newPlay = e.target.dataset.play
+	}
+
 	render() {
 		return (
 			<div>
+			{this.state.activePlay === "TRACKER" &&
 				<MonsterTracker />
+			}
 				<DiceRoller />
 			</div>
 			)
