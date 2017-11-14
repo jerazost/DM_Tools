@@ -105,7 +105,8 @@ export const MonsterResultCard = (props) => (
 					</div> 
 			  		))
 			  }
-			  <button onClick={props.add}>Add to combat</button>
+			  <button className="resultCard__AddButton" 
+			  onClick={props.add}>Add to combat</button>
 			</div> 
 			<div className="section-right">
 				{

@@ -35,13 +35,13 @@ class SearchForm extends React.Component {
 
 	updateVisible = (type, searchQuery) => {
 		this.setState({
-					visibleMonsters: 
-					this.state[type].map((el, id) => 
-						({...el, id: id})).filter(el => {
-							const textMatch = el.name.toLowerCase().includes(searchQuery.toLowerCase());
-							return textMatch;
-						}, () => {this.props.updateReference(this.state)})
-				});
+			visibleMonsters: 
+			this.state[type].map((el, id) => 
+				({...el, id: id})).filter(el => {
+					const textMatch = el.name.toLowerCase().includes(searchQuery.toLowerCase());
+					return textMatch;
+				}, () => {this.props.updateReference(this.state)})
+		});
 	};
 
 	handleTextChange = (e) => {
@@ -159,7 +159,6 @@ class SearchForm extends React.Component {
 					</div>
 				</div>
 				<div className="resultDisplay">
-
 				{this.state.searchType === MONSTER &&
 				 this.state.selectedMonster &&
 				  <MonsterResultCard {...this.state.selectedMonster} add={this.handleAddEntity}/>}

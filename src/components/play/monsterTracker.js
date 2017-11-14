@@ -25,7 +25,18 @@ const TrackerCard  = (props) => (
 			<svg height="5" width="100%" className="tapered-rule">
 		    	<polyline points="0,0 400,2.5 0,5"></polyline>
 		  	</svg>
-			<div className="top-stats monsterTracker__Card__ToggleView">
+		  	<div className="monsterTracker__Card__HP">
+			  	<button 
+			  	data-index={props.index}
+			  	data-type={"dec"}  
+			  	onClick={props.handleIncDec}>-</button>
+			  	<h1>HP: {props.hp}</h1>
+			  	<button 
+			  	data-index={props.index}
+			  	data-type={"inc"}
+			  	onClick={props.handleIncDec}>+</button>
+		  	</div>
+		  	<div className="top-stats monsterTracker__Card__ToggleView">
 				<div className="property-line first">
 					<h4>Armor Class </h4>
 					<p>{props.armor_class}</p>
@@ -102,18 +113,6 @@ const TrackerCard  = (props) => (
 				  <polyline points="0,0 400,2.5 0,5"></polyline>
 				</svg>
 			</div> 
-		
-		  	<div className="monsterTracker__Card__HP">
-			  	<button 
-			  	data-index={props.index}
-			  	data-type={"dec"}  
-			  	onClick={props.handleIncDec}>-</button>
-			  	<h1>HP: {props.hp}</h1>
-			  	<button 
-			  	data-index={props.index}
-			  	data-type={"inc"}
-			  	onClick={props.handleIncDec}>+</button>
-		  	</div>
 		</div>
 	</div>
 	)

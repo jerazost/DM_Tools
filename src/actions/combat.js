@@ -1,6 +1,6 @@
-const uuidv4 = require('uuid/v4');
+const uuidv1 = require('uuid/v1');
 export const addCombatEntity = (entity) => {
-	entity.uid = uuidv4();
+	entity.uid = uuidv1();
 	entity.hp = entity.hit_points; 
 	return ({
 		type: 'ADD_COMBAT_ENTITY',
