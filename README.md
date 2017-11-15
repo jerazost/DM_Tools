@@ -11,7 +11,7 @@ DM Tools has access to the 5e Systems Reference Document (SRD) data provided by 
 Dungeons and Dragons has a great active community that enjoys writing original content that is compatible with the base rules. We want you to be able to use your homebrew content in our application. DM Tools allows you to import your original content into the app with a built in creation feature. All of your content can be saved locally and used in the application alongside the standard 5e content.
 ![Imgur](https://i.imgur.com/xWsVXG7.png)
  * <strong>Play</strong>
-A good fantasy setting should feel immersive and concrete. As a dungeon master often times it is hard to generate content on the spot if your players do something unexpected. Sometimes you need something generated for you so you can focus on telling the story and keeping your players immersed in the world. We hope to bring many features that assist you in making your worlds seem concrete and immersive such as: 
+A good fantasy setting should feel immersive and concrete. As a dungeon master often times it is hard to generate content on the spot if your players do something unexpected. Sometimes you need something generated for you so you can focus on telling the story and keeping your players immersed in the world. We hope to bring many features that assist you in making your worlds seem concrete and immersive such as:
 	* **Loot Generator** - For chests, furniture, dead bodies, you name it!
 	* **Building Generator** - For when your party visits places you were not expecting. 
 	* **Combat Tracker** - Keeps track of initiative, stats, and health points for whatever monsters you throw at your players.
@@ -31,7 +31,7 @@ A good fantasy setting should feel immersive and concrete. As a dungeon master o
 8. Loot Generator - [Not Started]
 9. Building Generator - [Not Started]
 10. Combat Tracker - [In Progress]
-11. NPC Generator - [In Progress]
+11. NPC Generator - [Working]
 12. Dice Roller - [Working]
 13. Store Inventory Generator - [Not Started]
 

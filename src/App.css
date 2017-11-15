@@ -448,6 +448,18 @@ button:focus {
 .NPCGenerator__Card {
   padding: 1.6rem; }
 
+.App-header {
+  background: #454545;
+  color: white;
+  margin: 0;
+  padding: 1.6rem;
+  height: 4.8rem; }
+
+.App-title {
+  left: 1.2rem;
+  text-align: center;
+  position: absolute; }
+
 .page__select {
   padding: 1.6rem;
   display: flex;
@@ -460,15 +472,3 @@ button:focus {
 .page__select__option--active {
   background: #454545;
   color: #ecf0f1; }
-
-.App-header {
-  background: #454545;
-  color: white;
-  margin: 0;
-  padding: 1.6rem;
-  height: 4.8rem; }
-
-.App-title {
-  left: 1.2rem;
-  text-align: center;
-  position: absolute; }

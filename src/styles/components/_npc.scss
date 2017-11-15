@@ -4,17 +4,3 @@
 .NPCGenerator__Card {
 	padding: $m-size;
 }
-.page__select{ 
-	padding: $m-size;
-	display: flex;
-	flex-direction: row;
-	h1 {
-		margin-right: $l-size;
-		cursor: pointer;
-		padding: $s-size $m-size;
-	}
-}
-.page__select__option--active {
-	background: $background;
-	color: $light-text;
-}
