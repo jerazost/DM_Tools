@@ -297,8 +297,7 @@ button:focus {
 
 .createPage__select__option--active {
   background: #454545;
-  color: #ecf0f1;
-  order: -1; }
+  color: #ecf0f1; }
 
 .createName {
   background: none;
@@ -442,6 +441,25 @@ button:focus {
   justify-content: space-around; }
   .monsterTracker__Card__HP h1 {
     text-align: center; }
+
+.NPCGenerator {
+  padding: 3.2rem; }
+
+.NPCGenerator__Card {
+  padding: 1.6rem; }
+
+.page__select {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: row; }
+  .page__select h1 {
+    margin-right: 3.2rem;
+    cursor: pointer;
+    padding: 1.2rem 1.6rem; }
+
+.page__select__option--active {
+  background: #454545;
+  color: #ecf0f1; }
 
 .App-header {
   background: #454545;

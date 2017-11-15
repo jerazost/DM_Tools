@@ -47,7 +47,7 @@ class CombatTracker extends React.Component {
 	render() {
 		return (
 			<div className="tracker">
-			<h1>Monster Tracker</h1> <button 
+			<h1>Combat Tracker</h1> <button 
 			onClick={this.rollInitiative}>Roll Initiative</button>
 				<div className="monsterTracker">
 					{this.props.combatEntities

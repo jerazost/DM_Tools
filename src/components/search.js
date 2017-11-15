@@ -36,14 +36,45 @@ class SearchForm extends React.Component {
 	};
 
 	updateVisible = (type, searchQuery) => {
-		this.setState({
-			visibleMonsters: 
-			this.state[type].map((el, id) => 
-				({...el, id: id})).filter(el => {
+		let list = [...this.state[type]].map((el, id) => ({...el, id: id}));;
+		const top = [];
+		const bottom = [];
+		console.log(searchQuery)
+		list.forEach(e => {
+			if( e.name.toLowerCase().startsWith(searchQuery.toLowerCase())){
+				console.log('Passed');
+				top.push(e);
+			}else {
+				bottom.push(e);
+			}
+		});
+
+		list = [...top, ...bottom.filter(el => {
 					const textMatch = el.name.toLowerCase().includes(searchQuery.toLowerCase());
 					return textMatch;
-				}, () => {this.props.updateReference(this.state)})
-		});
+				})]
+		
+		switch(type) {
+			case 'monsters': 
+				this.setState({
+					visibleMonsters: list
+				}, () => {this.props.updateReference(this.state)});
+			break;
+			case 'spells': 
+				this.setState({
+					visibleSpells: list
+				}, () => {this.props.updateReference(this.state)});
+			break;
+			case 'magicItems': 
+				this.setState({
+					visibleMagicItems: list
+				}, () => {this.props.updateReference(this.state)});
+			break;
+			default: 
+				return null;
+		}
+		
+
 	};
 
 	handleTextChange = (e) => {

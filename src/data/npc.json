@@ -1,32 +1,33 @@
 {
 	"appearance": [
-	  "Distinctive jewelry: earrings, necklace, circlet, bracelets",
-	  "Piercings",
-	  "Flamboyant or outlandish clothes",
-	  "Formal, clean clothes",
-	  "Ragged, dirty clothes",
-	  "Pronounced scar",
-	  "Missing teeth",
-	  "Missing fingers",
-	  "Unusual eye color (or two different colors)",
-	  "Tattoos",
-	  "Birthmark",
-	  "Unusual skin color",
-	  "Bald",
-	  "Braided beard or hair",
-	  "Unusual hair color",
-	  "Nervous eye twitch",
-	  "Distinctive nose",
-	  "Distinctive posture (crooked or rigid)",
-	  "Exceptionally beautiful",
-	  "Exceptionally ugly"
+	  "distinctive jewelry: earrings, necklace, circlet, bracelets",
+	  "piercings",
+	  "flamboyant or outlandish clothes",
+	  "formal, clean clothes",
+	  "ragged, dirty clothes",
+	  "a pronounced scar",
+	  "missing teeth",
+	  "missing fingers",
+	  "an unusual eye color (or two different colors)",
+	  "tattoos",
+	  "a birthmark",
+	  "unusual skin color",
+	  "a bald head",
+	  "a braided beard",
+	  "braided hair",
+	  "an unusual hair color",
+	  "a nervous eye twitch",
+	  "a distinctive nose",
+	  "a distinctive posture (crooked or rigid)",
+	  "an exceptionally beautiful appearance",
+	  "an exceptionally ugly appearance"
 	  ],
 	"abilities" : {
-	  "high ability": {
+	  "high_ability": {
 		"strength" : [ 
 		  "powerful",
 		  "brawny",
-		  "strong as an ox"
+		  "strong"
 		],
 		"dexterity" : [
 		  "lithe", 
@@ -52,8 +53,9 @@
 		  "persuasive",
 		  "forceful",
 		  "born leader"
-		],
-	  "low ability": {
+		]
+	},
+	"low_ability": {
 		"strength": [ 
 		  "feeble",
 		  "scrawny"
@@ -79,7 +81,6 @@
 		  "boring"
 		]
 	  }
-	  }
 	},
 	"talents": [
 	  "Plays a musical instrument",
@@ -104,18 +105,18 @@
 	  "Knows theive's cant"
 	],
 	"interaction_traits": [
-	  "Argumentative",
-	  "Arrogant",
-	  "Blustering",
-	  "Rude",
-	  "Curious",
-	  "Friendly",
-	  "Honest",
-	  "Hot tempered",
-	  "Irritable",
-	  "Ponderous",
-	  "Quiet",
-	  "Suspicous"
+	  "argumentative",
+	  "arrogant",
+	  "blustering",
+	  "rude",
+	  "curious",
+	  "friendly",
+	  "honest",
+	  "hot tempered",
+	  "irritable",
+	  "ponderous",
+	  "quiet",
+	  "suspicous"
 	  ],
 	"mannerisms":[
 	  "Prone to singing, whistling, or humming quietly",
@@ -190,28 +191,28 @@
 		]
 	},
 	"bonds":[
-	  "Dedicated to fulfilling a personal life goal",
-	  "Protective of close family members",
-	  "Protective of colleagues or compatriots",
-	  "Loyal to a benefactor, patron, or employer",
-	  "Captivated by a romantic interest",
-	  "Drawn to a special place",
-	  "Protective of a sentimental keepsake",
-	  "Protective of a valuable possession",
-	  "Out for revenge"
+	  "dedicated to fulfilling a personal life goal",
+	  "protective of close family members",
+	  "protective of colleagues or compatriots",
+	  "loyal to a benefactor, patron, or employer",
+	  "captivated by a romantic interest",
+	  "drawn to a special place",
+	  "protective of a sentimental keepsake",
+	  "protective of a valuable possession",
+	  "out for revenge"
 	],
 	"flaws_and_secrets" : [
-	  "Forbidden love or susceptibility to romance",
-	  "Enjoys decadent pleasures",
-	  "Arrogance",
-	  "Envies another creature's possessions or station",
-	  "Overpowering greed",
-	  "Prone to rage",
-	  "Has a powerful enemy",
-	  "Specific phobia",
-	  "Shameful or scandalous history",
-	  "Secret Crime or misdeed",
-	  "Possession of forbidden lore",
-	  "Foolhardy bravery"
+	  "forbidden love or susceptibility to romance",
+	  "enjoys decadent pleasures",
+	  "arrogance",
+	  "envies another creature's possessions or station",
+	  "overpowering greed",
+	  "prone to rage",
+	  "has a powerful enemy",
+	  "specific phobia",
+	  "shameful or scandalous history",
+	  "secret Crime or misdeed",
+	  "sossession of forbidden lore",
+	  "foolhardy bravery"
 	  ]
   }

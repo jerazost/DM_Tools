@@ -15,11 +15,11 @@ export default class Create extends React.Component {
 	}
 	render() {
 		return (
-			<div className="createPage">
-			<div className="createPage__select" onClick={this.switchView}>
-				<h1 data-view='MONSTER' className={this.state.activeState === 'MONSTER' ? 'createPage__select__option--active' : ''}>Monster</h1>
-				<h1 data-view='PLAYER' className={this.state.activeState === 'PLAYER' ? 'createPage__select__option--active' : ''}>Player</h1>
-				<h1 data-view='ITEM' className={this.state.activeState === 'ITEM' ? 'createPage__select__option--active' : ''}>Item</h1>
+			<div className="page">
+			<div className="page__select" onClick={this.switchView}>
+				<h1 data-view='MONSTER' className={this.state.activeState === 'MONSTER' ? 'page__select__option--active' : ''}>Monster</h1>
+				<h1 data-view='PLAYER' className={this.state.activeState === 'PLAYER' ? 'page__select__option--active' : ''}>Player</h1>
+				<h1 data-view='ITEM' className={this.state.activeState === 'ITEM' ? 'page__select__option--active' : ''}>Item</h1>
 			</div>
 			{this.state.activeState === 'MONSTER' && <CreateMonsterForm />}
 			{this.state.activeState === 'PLAYER' && <CreatePlayerForm />}

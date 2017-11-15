@@ -1,27 +1,34 @@
 import React from 'react';
-import DiceRoller from './play/diceRoller'
-import CombatTracker from './play/combatTracker'
-
+import DiceRoller from './play/diceRoller';
+import CombatTracker from './play/combatTracker';
+import NPCGenerator from './play/npcGenerator';
 
 class Play extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			activePlay: "TRACKER"
+			activeState: "GENERATORS"
 		}
 	}
 
-	handleActiveChange = e =>  {
-		const newPlay = e.target.dataset.play;
-		this.setState({activePlay: newPlay});
+	switchView = e =>  {
+		const newPlay = e.target.dataset.view;
+		this.setState({activeState: newPlay});
 	}
 
 	render() {
 		return (
 			<div>
-			{this.state.activePlay === "TRACKER" &&
-				<CombatTracker />
-			}
+				<div className="page__select" onClick={this.switchView}>
+					<h1 data-view='COMBAT' 
+					className={this.state.activeState === 'COMBAT' ? 'page__select__option--active' : ''}
+					>Combat Tracker</h1>
+					<h1 data-view='GENERATORS' 
+					className={this.state.activeState === 'GENERATORS' ? 'page__select__option--active' : ''}
+					>Generators</h1>
+				</div>
+			{this.state.activeState === "COMBAT" && <CombatTracker />}
+			{this.state.activeState === "GENERATORS" && <NPCGenerator />}
 				<DiceRoller />
 			</div>
 			)
