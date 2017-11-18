@@ -4,6 +4,8 @@ import AppRouter from './AppRouter';
 import configureStore from './store/configureStore';
 import {Provider} from 'react-redux';
 
+const localStorage = window.localStorage;
+
 const store = configureStore();
 
 store.subscribe(() => {

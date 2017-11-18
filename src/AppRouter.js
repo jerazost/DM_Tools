@@ -11,6 +11,7 @@ const AppRouter = () => (
           <Header/>
           <div className="App-body">
 			  <Switch>
+			  	<Route path='/' component={Search} exact={true}/>
 	          	<Route path='/reference' component={Search}/>
 	          	<Route path='/play' component={Play}/>
 	          	<Route path='/create' component={Create}/>

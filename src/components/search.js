@@ -44,15 +44,12 @@ class SearchForm extends React.Component {
 			if( e.name.toLowerCase().startsWith(searchQuery.toLowerCase())){
 				console.log('Passed');
 				top.push(e);
-			}else {
+			}else if(e.name.toLowerCase().includes(searchQuery.toLowerCase())){
 				bottom.push(e);
 			}
 		});
 
-		list = [...top, ...bottom.filter(el => {
-					const textMatch = el.name.toLowerCase().includes(searchQuery.toLowerCase());
-					return textMatch;
-				})]
+		list = [...top, ...bottom];
 		
 		switch(type) {
 			case 'monsters': 
@@ -73,8 +70,7 @@ class SearchForm extends React.Component {
 			default: 
 				return null;
 		}
-		
-
+	
 	};
 
 	handleTextChange = (e) => {
@@ -157,6 +153,7 @@ class SearchForm extends React.Component {
 						className="search__head__query"
 						value={this.state.searchQuery}
 						onChange={this.handleTextChange}
+						autofocus
 						/>
 					</div>
 					<div className="search__results">

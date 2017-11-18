@@ -3,6 +3,7 @@
 @import 'styles/components/search';
 @import 'styles/components/create';
 @import 'styles/components/play';
+
 .App-header {
   background: $background;
   color: white;
@@ -16,6 +17,7 @@
   text-align: center;
   position: absolute;
 }
+
 .page__select{ 
 	padding: $m-size;
 	display: flex;
@@ -26,6 +28,7 @@
 		padding: $s-size $m-size;
 	}
 }
+
 .page__select__option--active {
 	background: $background;
 	color: $light-text;
