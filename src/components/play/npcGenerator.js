@@ -2,22 +2,22 @@ import React from 'react';
 import {connect} from 'react-redux';
 const npc = require('../../data/npc.json');
 const names = require('../../data/names.json');
-
 const pickRandRecrsive = list => {
-	if(typeof list === 'array'){
+	let type = typeof list;
+	if(type === 'array'){
 		const r = Math.floor(Math.random() * list.length);
-		const type = typeof list[r];
+		type = typeof list[r];
 		if(type === 'string') {
 			return list[r];
 		}else if(type === 'object' || type === 'array'){
 			return pickRandRecrsive(list[r]);
 		}
 
-	}else if (typeof list === 'object') {
+	}else if (type === 'object') {
 		const keys = Object.keys(list);
 		const r = Math.floor(Math.random() * keys.length);
 		const val = list[keys[r]];
-		const type = typeof val;
+		type = typeof val;
 		if (type === 'string') return val;
 		else if (type === 'object' || type === 'array') return pickRandRecrsive(val);
 	}else{

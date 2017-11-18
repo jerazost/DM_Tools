@@ -1,7 +1,6 @@
 const monData = require('../data/monsters.json');
 const spellData = require('../data/spells.json');
 const itemData = require('../data/5esrd.json')["Magic Items"];
-const npcs = require('../data/npc.json');
 const itemList = [];
 
 
