@@ -21,7 +21,7 @@ const pickRandRecrsive = list => {
 		if (type === 'string') return val;
 		else if (type === 'object' || type === 'array') return pickRandRecrsive(val);
 	}else{
-		console.error('Improper type passed to pickRandRecrsive')
+		console.error('Improper type passed to pickRandRecursive')
 	}
 }
 
@@ -54,11 +54,7 @@ class NPCGenerator extends React.Component {
 			{this.state.name && 
 				<div className="NPCGenerator__Card stat-block">
 					<h2>{this.state.name}</h2>
-					<p>A{
-						// ['a','e','i','o','u', 'h'].reduce((cond,v)=>{
-						// 	if(this.state.interaction_trait[0] === v) cond = true;}, false)
-						// && 'n'
-					} {this.state.interaction_trait} person.</p>
+					<p>A {this.state.interaction_trait} person.</p>
 					<p> With {this.state.appearance}</p>
 					<p>{this.state.high_ability} but {this.state.low_ability}</p>
 					<p>{this.state.talent}</p>

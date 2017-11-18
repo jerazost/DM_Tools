@@ -1,12 +1,12 @@
-const customMonstersFromStorage = window.localStorage.getItem('customMonsters') || [];
+const customMonstersFromStorage = JSON.parse(window.localStorage.getItem('monsters')) || [];
 
 export default (state = customMonstersFromStorage, action) => {
 	switch(action.type){
-		case 'ADD_MONSTER':
+		case 'ADD_CUSTOM_MONSTER':
 			return [...state, ...action.monster];
 		case 'REMOVE_MONSTER':
 			return state.filter(m => m.uuid !== action.uuid);
 		default: 
-			return new Error('Wrong action type in customMonsters reducer');
+			return state;
 	}
 };

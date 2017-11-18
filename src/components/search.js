@@ -33,7 +33,9 @@ const mapDispatchToProps = dispatch => {
 class SearchForm extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = props.reference;
+		const reference = props.reference;
+		reference.visibleMonsters = [...props.customMonsters, ...reference.visibleMonsters] 
+		this.state = reference;
 	};
 
 	updateVisible = (type, searchQuery) => {

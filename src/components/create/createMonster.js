@@ -5,11 +5,12 @@ import {FormSize, FormMonsterType, FormName} from './form/formMisc';
 import AbilityScores from './form/abilityScores';
 import Actions from './form/actions';
 import {editMonster, addCustomMonster} from '../../actions/monster';
-
+import {MonsterSearchResult} from '../search/monster';
 
 const mapStateToProps = state => {
 	return {
-		monster: state.monsterCreate
+		monster: state.monsterCreate,
+		customMonsters: state.customMonsters
 	}
 }
 
@@ -23,6 +24,15 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 		}
 	}
 }
+
+const MonsterList = (props) => (
+	<div>
+		{ props.monsters && props.monsters.map((monster) => 
+			<MonsterSearchResult {...monster}/>
+			)
+		}
+	</div>
+	)
 
 class CreateMonsterForm extends React.Component {
 	constructor(props) {
@@ -117,6 +127,7 @@ class CreateMonsterForm extends React.Component {
     					</div>
     					<Actions handleActions={this.handleActions}/>
     				</div>
+    				<MonsterList monsters={this.props.customMonsters}/>
     				<div className="form__row">
     					<button className="createSubmit" onClick={this.handleSubmit}>Create Monster</button>
     				</div>
