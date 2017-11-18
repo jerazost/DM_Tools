@@ -1,8 +1,9 @@
 const monData = require('../data/monsters.json');
 const spellData = require('../data/spells.json');
 const itemData = require('../data/5esrd.json')["Magic Items"];
-const itemList = [];
 const npcs = require('../data/npc.json');
+const itemList = [];
+
 
 for (let item in itemData){
 	itemList.push({name: item, ...itemData[item]});
@@ -12,14 +13,14 @@ const referenceDefaultState = {
 	searchQuery: '',
 	searchType: 0,
 	monsters: monData,
-	visibleMonsters: monData.map((mon,id) => ({...mon, id: id})),
-	selectedMonster: '',
+	visibleMonsters: monData,
+	selectedMonster: monData[Math.floor(Math.random() * monData.length)],
 	spells: spellData,
-	visibleSpells: spellData.map((spell,id) => ({...spell, id: id})),
-	selectedSpell: '',
+	visibleSpells: spellData,
+	selectedSpell: spellData[Math.floor(Math.random() * spellData.length)],
 	magicItems: itemList,
-	visibleMagicItems: itemList.map((item, id) => ({...item, id: id})),
-	selectedMagicItem: ''
+	visibleMagicItems: itemList,
+	selectedMagicItem: itemList[Math.floor(Math.random() * itemData.length)]
 }
 
 export default (state = referenceDefaultState, action) => {

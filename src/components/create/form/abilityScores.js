@@ -3,12 +3,12 @@ class AbilityScores extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			strength: 0,
-			dexterity: 0,
-			constitution: 0,
-			intelligence: 0,
-			wisdom: 0,
-			charisma: 0
+			strength: props.strength,
+			dexterity: props.dexterity,
+			constitution: props.constitution,
+			intelligence: props.intelligence,
+			wisdom: props.wisdom,
+			charisma: props.charisma
 		}
 	};
 

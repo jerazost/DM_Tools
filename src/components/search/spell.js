@@ -1,8 +1,8 @@
 import React from 'react';
 export const SpellSearchResult = (props) => (
-	<div className="search__results__result" id={props.id} onClick={props.handleResultClick}>
-		<h3 id={props.id}>{props.name}</h3>
-		<p id={props.id}>{props.level} {props.school}</p>
+	<div className="search__results__result" data-index={props.index}>
+		<h3 data-index={props.index}>{props.name}</h3>
+		<p data-index={props.index}>{props.level} {props.school}</p>
 	</div>
 	)
 
