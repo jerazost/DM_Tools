@@ -92,7 +92,14 @@ class CreateMonsterForm extends React.Component {
 		return (
 			<div className="createMonsterForm form">	
     				<FormName name={this.state.name} handleName={this.handleName}/>
-    				<AbilityScores handleAbilityScores={this.handleAbilityScores}/>
+    				<AbilityScores 
+    				strength={this.state.strength}
+    				dexterity={this.state.dexterity} 
+    				constitution={this.state.constitution} 
+    				intelligence={this.state.intelligence} 
+    				wisdom={this.state.wisdom} 
+    				charisma={this.state.charisma}  
+    				handleAbilityScores={this.handleAbilityScores}/>
     				<div className="form__row">
     					<AlignmentChart curAlignment={this.state.alignment} handleAlignment={this.handleAlignment}/>
     					<div className="form__col">

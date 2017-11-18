@@ -1,9 +1,9 @@
 import React from 'react';
 
 export const MonsterSearchResult = (props) => (
-	<div className="search__results__result" id={props.id} onClickCapture={props.handleResultClick}>
-		<h3 id={props.id}>{props.name}</h3>
-		<p id={props.id}>{props.size} {props.type}</p>
+	<div className="search__results__result" data-index={props.index}>
+		<h3 data-index={props.index}>{props.name}</h3>
+		<p data-index={props.index}>{props.size} {props.type}</p>
 	</div>
 )
 

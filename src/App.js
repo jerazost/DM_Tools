@@ -7,7 +7,7 @@ import {Provider} from 'react-redux';
 const store = configureStore();
 
 store.subscribe(() => {
-	console.log(store.getState());
+	console.log(store.getState().reference)
 });
 
 const App = () => (

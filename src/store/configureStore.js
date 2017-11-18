@@ -1,17 +1,17 @@
 import { createStore, combineReducers } from 'redux';
-import monstersReducer from '../reducers/monsterList';
 import monsterCreateReducer from '../reducers/monsterCreate';
-// import playersReducer from '../reducers/players';
+import playersReducer from '../reducers/players';
 import rollsReducer from '../reducers/rolls';
 import referenceReducer from '../reducers/reference';
 import combatEntitiesReducer from '../reducers/combatEntities';
+import customMonstersReducer from '../reducers/customMonsters';
 
 export default () => {
   const store = createStore(
     combineReducers({
-    	monsters: monstersReducer,
+      customMonsters: customMonstersReducer,
     	monsterCreate: monsterCreateReducer,
-    	// players: playersReducer,
+    	players: playersReducer,
     	reference: referenceReducer,
       combatEntities: combatEntitiesReducer,
     	rolls: rollsReducer

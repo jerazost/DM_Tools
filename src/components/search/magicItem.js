@@ -17,7 +17,7 @@ export const MagicItemResultCard = (props) => (
 	)
 
 export const MagicItemSearchResult = (props) => (
-	<div className="search__results__result" id={props.id} onClick={props.handleResultClick}>
-		<h3 id={props.id}>{props.name}</h3>
+	<div className="search__results__result" data-index={props.index} onClick={props.handleResultClick}>
+		<h3 data-index={props.index}>{props.name}</h3>
 	</div>
 	)
