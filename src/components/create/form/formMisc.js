@@ -1,14 +1,21 @@
 import React from 'react';
+
 export const FormSize = (props) => (
-		<select name="size" value={props.size} onChange={props.handleSize}>
-			<option value="tiny">Tiny</option>
-			<option value="small">Small</option>
-			<option value="medium">Medium</option>
-			<option value="large">Large</option>
-			<option value="huge">Huge</option>
-			<option value="gargantuan">Gargantuan</option>
-		</select>
-	) 
+		<div value={props.size} onChange={props.handleSize} className="formSize">
+			{["Tiny", "Small", "Medium", "Large", "Huge", "Gargantuan"].map( (s, i) => 
+				<div className="formSize__option" data-value={s} key={i}>
+					<img 
+					alt="Monster Icon"
+					src="../../media/minotaur.svg"
+					style={{
+						height: (props.scale * (i * 0.6 + 1)) + 'rem',
+					}}></img>
+					<h2>{s}</h2>
+				</div>
+				)}
+		</div>
+	)
+
 export const FormMonsterType = (props) => (
 		<select id="type" value={props.type} onChange={props.handleType}>
 	       <option value="Aberration">Aberration</option>

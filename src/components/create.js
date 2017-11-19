@@ -7,7 +7,7 @@ export default class Create extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {activeState: 'MONSTER'}
+		this.state = {activeState: 'PLAYER'}
 	}
 	switchView = (e) => {
 		if(e.target.dataset.view)

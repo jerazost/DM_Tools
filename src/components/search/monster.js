@@ -32,8 +32,8 @@ export const MonsterResultCard = (props) => (
 						<p>{props.speed}</p>
 					</div> 
 					<svg height="5" width="100%" className="tapered-rule">
-			    <polyline points="0,0 400,2.5 0,5"></polyline>
-			  </svg>
+			    		<polyline points="0,0 400,2.5 0,5"></polyline>
+			 		</svg>
 					<div className="abilities">
 						<div className="ability-strength">
 							<h4>STR</h4>
@@ -61,8 +61,8 @@ export const MonsterResultCard = (props) => (
 						</div> 
 					</div> 
 					<svg height="5" width="100%" className="tapered-rule">
-			    <polyline points="0,0 400,2.5 0,5"></polyline>
-			  </svg>
+			    		<polyline points="0,0 400,2.5 0,5"></polyline>
+			  		</svg>
 			  		{ props.damage_immunities && 
 			  			<div className="property-line first">
 							<h4>Damage Immunities </h4>

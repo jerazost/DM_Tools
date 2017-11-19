@@ -1,19 +1,17 @@
 import React from 'react';
-import {AlignmentChart} from './form/alignment';
-import AbilityScores from './form/abilityScores';
-import {FormName} from './form/formMisc';
+//import {FormSize} from './form/formMisc';
+import ChooseRace from './form/races';
 
 class CreatePlayerForm extends React.Component {
 	constructor (props) {
 		super(props);
-		this.state = {}
+		this.state = {
+		}
 	}
 	render() {
 		return (
 			<div>
-				<FormName/>
-				<AbilityScores />
-				<AlignmentChart/>
+				<ChooseRace />
 			</div>
 			)
 	}

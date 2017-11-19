@@ -1,3 +1,4 @@
+
 .createPage {
 	padding: $l-size;
 }
@@ -112,4 +113,32 @@
 		margin-right:$m-size;
 	}
 	
+}
+.formSize {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	width: 50%;
+}
+.formSize__option {
+	padding: $m-size;
+	display: flex;
+	flex-direction: column;
+	img {
+		filter: invert(100%);
+	}
+	h2 {
+		text-align: center;
+	}
+}
+
+.formSize__option:hover {
+	background: darken($light-background, 40%);
+	cursor: pointer;
+}
+.races{
+	display: flex;
+}
+.races__raceCard {
+
 }

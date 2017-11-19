@@ -119,7 +119,7 @@ class CreateMonsterForm extends React.Component {
     						onChange={this.handleArmorClass}
     						></input>
     						<h2>Size</h2>
-    						<FormSize size={this.state.size || ''}handleSize={this.handleSize}/>
+    						<FormSize scale={1} size={this.state.size || ''}handleSize={this.handleSize}/>
 							<h2>Type</h2>
 							<FormMonsterType type={this.state.type || ''} handleType={this.handleType}/>
 							<h2>Challenge Rating</h2>

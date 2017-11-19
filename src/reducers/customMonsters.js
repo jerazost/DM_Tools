@@ -4,7 +4,7 @@ export default (state = customMonstersFromStorage, action) => {
 	switch(action.type){
 		case 'ADD_CUSTOM_MONSTER':
 			return [...state, ...action.monster];
-		case 'REMOVE_MONSTER':
+		case 'REMOVE_CUSTOM_MONSTER':
 			return state.filter(m => m.uuid !== action.uuid);
 		default: 
 			return state;

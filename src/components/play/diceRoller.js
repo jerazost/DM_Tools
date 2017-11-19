@@ -43,12 +43,12 @@ class DiceRoller extends React.Component {
 			<div className="dice">
 				<h3>Dice Roller</h3>
 				<div className="diceRoller">	
+					<History rolls={this.state.rolls}/>
 					<div className="diceRoller__buttons">
 						{[4, 6, 8, 10, 12, 20].map((v, i) => 
 							<DieRow handleRoll={this.handleRoll} key={i} die={v} />
 						)}
 					</div>
-					<History rolls={this.state.rolls}/>
 				</div>
 			</div>
 			)

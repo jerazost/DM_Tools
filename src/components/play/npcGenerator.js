@@ -53,7 +53,10 @@ class NPCGenerator extends React.Component {
 				<br></br>
 			{this.state.name && 
 				<div className="NPCGenerator__Card stat-block">
-					<h2>{this.state.name}</h2>
+					<h1>{this.state.name}</h1>
+					<svg height="5" width="100%" className="tapered-rule">
+			    	<polyline points="0,0 400,2.5 0,5"></polyline>
+			    	</svg>
 					<p>A {this.state.interaction_trait} person.</p>
 					<p> With {this.state.appearance}</p>
 					<p>{this.state.high_ability} but {this.state.low_ability}</p>
