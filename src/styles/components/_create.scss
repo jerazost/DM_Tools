@@ -112,7 +112,6 @@
 		display: inline;
 		margin-right:$m-size;
 	}
-	
 }
 .formSize {
 	display: flex;
@@ -136,9 +135,40 @@
 	background: darken($light-background, 40%);
 	cursor: pointer;
 }
-.races{
+.racePage {
 	display: flex;
 }
+.races{
+	display: flex;
+	flex-wrap: wrap;
+	width: 55%;
+	height: 45%;
+}
 .races__raceCard {
-
+	h2 {
+		display: inline;
+	}
+	flex-grow: 1;
+}
+.races__raceCard--preview {
+	width: 20rem;
+	height: 8rem;
+}
+.races__raceCard--full {
+	padding-top: $l-size;
+	h1 {
+		font-size: 5rem;
+		display: inline;
+	}
+}
+.races__raceCard--preview:hover {
+	box-shadow: 0 0 2.5em darken(#867453, 30%);
+	cursor: pointer;
+}
+.races__raceCard__icon {
+	width: 6rem;
+	display: inline-block;
+	float: right;
+	margin-right: 2rem;
+	filter: invert(80%);
 }

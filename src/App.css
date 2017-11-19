@@ -35,7 +35,7 @@ button:focus {
 
 .stat-block {
   text-align: left;
-  margin: 20px;
+  margin: 2rem;
   display: inline-block;
   vertical-align: top;
   min-width: 17%;
@@ -48,7 +48,7 @@ button:focus {
 
 .stat-block.wide {
   width: 80.5%;
-  min-width: 560px;
+  min-width: 600px;
   text-align: center; }
 
 .stat-block.wide .section-left,
@@ -406,8 +406,40 @@ button:focus {
   background: #898982;
   cursor: pointer; }
 
-.races {
+.racePage {
   display: flex; }
+
+.races {
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
+  height: 45%; }
+
+.races__raceCard {
+  flex-grow: 1; }
+  .races__raceCard h2 {
+    display: inline; }
+
+.races__raceCard--preview {
+  width: 20rem;
+  height: 8rem; }
+
+.races__raceCard--full {
+  padding-top: 3.2rem; }
+  .races__raceCard--full h1 {
+    font-size: 5rem;
+    display: inline; }
+
+.races__raceCard--preview:hover {
+  box-shadow: 0 0 2.5em #282218;
+  cursor: pointer; }
+
+.races__raceCard__icon {
+  width: 6rem;
+  display: inline-block;
+  float: right;
+  margin-right: 2rem;
+  filter: invert(80%); }
 
 .dice {
   padding: 1.2rem;
