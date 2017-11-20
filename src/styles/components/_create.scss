@@ -172,3 +172,36 @@
 	margin-right: 2rem;
 	filter: invert(80%);
 }
+.classes {
+	display: flex;
+}
+.classes__col {
+	display: flex;
+	flex-direction: column;
+}
+.classCard {
+	text-align: left;
+	margin:  .5rem 2rem;
+	display: inline-block;
+	min-width: 10%;
+	background: #FDF1DC;
+	padding: 5px 10px 20px;
+	box-shadow: 0 0 .8em #867453;
+	h2 {
+		font-size: 2.5rem;
+		display: inline;
+		margin-right: $m-size;
+	}
+}
+
+.classCard:hover {
+	box-shadow: 0 0 2.5em darken(#867453, 30%);
+	cursor: pointer;
+}
+
+.classCard__icon {
+	width: 2.5rem;
+	filter: invert(80%);
+	float: right;
+
+}

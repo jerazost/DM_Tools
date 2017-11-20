@@ -3,6 +3,7 @@ const races = require('../../../data/5esrd.json')['Races'];
 const raceList = [];
 const dict = {}
 
+//Formatting hard to parse JSON data from 5esrd
 const parseAsteriskHeading = str => {
 	if(!str || str[0] !== '*'){
 		return str;
@@ -46,7 +47,7 @@ const RaceCard = props => {
 			else contentRight.push(content);
 		});
 		return (
-			<div className="races__raceCard stat-block wide races__raceCard--full " >
+			<div className="races__raceCard stat-block wide races__raceCard--full">
 				<div className="section-left">
 					<h1>{props.name}</h1>
 					<img
@@ -94,14 +95,21 @@ class ChooseRace extends React.Component {
 	}
 	render () {
 		return (
-		<div className="racePage">
-			<div className="races" onClick={this.handleRaceChange}>
-			{raceList.map((race, i) => (
-				<RacePreview {...race} key={i}/>
-			))}
+		<div>
+			<h1>Choose Race</h1>
+			<div className="racePage">
+				<div className="races" onClick={this.handleRaceChange}>
+				{raceList.map((race, i) => (
+					<RacePreview {...race} key={i}/>
+				))}
+				</div>
+				<RaceCard {...raceList[dict[this.state.activeRace]]}/>
+				<div>
+					<button onClick={this.props.handleNext}>Next</button>
+				</div>
 			</div>
-			<RaceCard {...raceList[dict[this.state.activeRace]]}/>
 		</div>
+		
 		)
 	}
 }

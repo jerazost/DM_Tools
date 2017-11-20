@@ -10,14 +10,27 @@ class CreatePlayerForm extends React.Component {
 	constructor (props) {
 		super(props);
 		this.state = {
-			currentPage: RACE
+			currentPage: CLASS
 		}
+		this.order = [RACE, CLASS]
 	}
+	handleNext = e => {
+		this.setState({currentPage: this.state.currentPage + 1});	
+	};
+	handleback = e => {
+		this.setState({currentPage: this.state.currentPage - 1});
+	};
 	render() {
 		return (
-			<div>
-			{this.state.currentPage === RACE && <ChooseRace />}
-			{this.state.currentPage === CLASS && <ChooseClass />}	
+			<div className="createContainer">
+			{this.state.currentPage === RACE && <ChooseRace 
+				handleBack={this.handleback}
+				handleNext={this.handleNext}
+				/>}
+			{this.state.currentPage === CLASS && <ChooseClass 
+				handleBack={this.handleback}
+				handleNext={this.handleNext}
+				/>}	
 			</div>
 			)
 	}
