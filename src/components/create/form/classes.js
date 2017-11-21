@@ -2,6 +2,17 @@ import React from 'react';
 const classes = require('../../../data/classes.json');
 console.log(classes);
 
+const CheckboxCard = props => (
+	<div>
+		{props.list.map((l, i) => 
+			<div key={i}>
+				<input id={l} type="checkbox"/>
+				<label for={l}>{l}</label>
+			</div>
+		)}
+	</div>
+)
+
 const ClassCardPreview = props => (
 	<div className="classCard" data-class={props.name}>
 		<h2>{props.name}</h2>
@@ -38,7 +49,7 @@ class ChooseClass extends React.Component{
 				)}
 				</div>
 				<div className="classes__col">
-
+					
 				</div>
 				<div className="classes__col">
 					
@@ -48,6 +59,4 @@ class ChooseClass extends React.Component{
 		)
 	}
 } 
-
-
 export default ChooseClass;

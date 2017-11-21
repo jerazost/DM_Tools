@@ -466,7 +466,7 @@ button:focus {
   cursor: pointer; }
 
 .classCard__icon {
-  width: 2.5rem;
+  width: 3rem;
   filter: invert(80%);
   float: right; }
 
