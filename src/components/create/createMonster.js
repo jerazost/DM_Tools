@@ -14,7 +14,7 @@ const mapStateToProps = state => {
 	}
 }
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
 	return {
 		onMonsterEdit: monster => {
 			dispatch(editMonster(monster));
