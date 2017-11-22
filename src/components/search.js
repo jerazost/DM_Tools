@@ -104,7 +104,7 @@ class SearchForm extends React.Component {
 	};
 
 	handleResultClick = (e) => {
-		e.stopPropagation();
+		//e.stopPropagation();
 		const index = e.target.dataset.index;
 		console.log(index);
 		switch (this.state.searchType) {
@@ -138,62 +138,65 @@ class SearchForm extends React.Component {
 					<div className="search__head">
 						<div className="search__head__types">
 							<div className=
-							{this.state.searchType === MONSTER ? 
-								"search__head__types--active" : ''}
-							onClick={this.typeToMonster}
-							>Monsters</div>
+                {this.state.searchType === MONSTER ? 
+                  "search__head__types--active" : ''}
+                onClick={this.typeToMonster}
+                >Monsters
+              </div>
 							<div className=
-							{this.state.searchType === SPELL ? 
-								"search__head__types--active" : ''}
-							onClick={this.typeToSpell}>Spells</div>
+                {this.state.searchType === SPELL ? 
+                  "search__head__types--active" : ''}
+                onClick={this.typeToSpell}>Spells
+              </div>
 							<div className=
-							{this.state.searchType === MAGIC_ITEM ? 
-								"search__head__types--active": ''}
-							onClick={this.typeToMagicItem}>Items</div>
+                {this.state.searchType === MAGIC_ITEM ? 
+                  "search__head__types--active": ''}
+                onClick={this.typeToMagicItem}>Items
+              </div>
 						</div>
 						<input 
-						type="text"
-						placeholder="Search"
-						className="search__head__query"
-						value={this.state.searchQuery}
-						onChange={this.handleTextChange}
-						autofocus
+              type="text"
+              placeholder="Search"
+              className="search__head__query"
+              value={this.state.searchQuery}
+              onChange={this.handleTextChange}
+              autoFocus
 						/>
 					</div>
 					<div className="search__results" onClick={this.handleResultClick}>
-					{ this.state.searchType === MONSTER 
-						&& this.state.visibleMonsters.map((monster, i) => 
-								<MonsterSearchResult 
-								key={i} index={i}
-								{...monster}/>
-							)
-					}
-					{ this.state.searchType === SPELL 
-						&& this.state.visibleSpells.map((spell, i) => 
-								<SpellSearchResult
-								key={i} index={i}
-								{...spell}/>
-							)
-					}
-					{this.state.searchType === MAGIC_ITEM 
-						&& this.state.visibleMagicItems.map((item, i) => 
-								<MagicItemSearchResult
-								key={i} index={i}
-								{...item}/>
-							)
-					}
+            { this.state.searchType === MONSTER 
+              && this.state.visibleMonsters.map((monster, i) => 
+                  <MonsterSearchResult 
+                  key={i} index={i}
+                  {...monster}/>
+                )
+            }
+            { this.state.searchType === SPELL 
+              && this.state.visibleSpells.map((spell, i) => 
+                  <SpellSearchResult
+                  key={i} index={i}
+                  {...spell}/>
+                )
+            }
+            {this.state.searchType === MAGIC_ITEM 
+              && this.state.visibleMagicItems.map((item, i) => 
+                  <MagicItemSearchResult
+                  key={i} index={i}
+                  {...item}/>
+                )
+            }
 					</div>
 				</div>
 				<div className="resultDisplay">
-				{this.state.searchType === MONSTER &&
-				 this.state.selectedMonster &&
-				  <MonsterResultCard {...this.state.selectedMonster} add={this.handleAddEntity}/>}
-				{this.state.searchType === SPELL &&
-				 this.state.selectedSpell &&
-				  <SpellResultCard {...this.state.selectedSpell} />}
-				{this.state.searchType === MAGIC_ITEM &&
-				 this.state.selectedMagicItem &&
-				  <MagicItemResultCard {...this.state.selectedMagicItem} />}
+          {this.state.searchType === MONSTER &&
+          this.state.selectedMonster &&
+            <MonsterResultCard {...this.state.selectedMonster} add={this.handleAddEntity}/>}
+          {this.state.searchType === SPELL &&
+          this.state.selectedSpell &&
+            <SpellResultCard {...this.state.selectedSpell} />}
+          {this.state.searchType === MAGIC_ITEM &&
+          this.state.selectedMagicItem &&
+            <MagicItemResultCard {...this.state.selectedMagicItem} />}
 				</div>
 			</div>
 			
