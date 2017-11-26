@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 const npc = require('../../data/npc.json');
 const names = require('../../data/names.json');
+
 const pickRandRecrsive = list => {
 	let type = typeof list;
 	if(type === 'array'){
@@ -49,22 +50,22 @@ class NPCGenerator extends React.Component {
 	render() {
 		return (
 			<div className="NPCGenerator">
-				<button onClick={this.generateNPC}>Generate a Random NPC</button>
-				<br></br>
-			{this.state.name && 
-				<div className="NPCGenerator__Card stat-block">
-					<h1>{this.state.name}</h1>
-					<svg height="5" width="100%" className="tapered-rule">
-			    	<polyline points="0,0 400,2.5 0,5"></polyline>
-			    	</svg>
-					<p>A {this.state.interaction_trait} person.</p>
-					<p> With {this.state.appearance}</p>
-					<p>{this.state.high_ability} but {this.state.low_ability}</p>
-					<p>{this.state.talent}</p>
-					<p>{this.state.mannerism}</p>
-					<p><strong>Secret:</strong> {this.state.secret}</p>
-				</div>
-			}
+          <button onClick={this.generateNPC}>Generate a Random NPC</button>
+          <br></br>
+        {this.state.name && 
+          <div className="NPCGenerator__Card stat-block">
+            <h1>{this.state.name}</h1>
+            <svg height="5" width="100%" className="tapered-rule">
+              <polyline points="0,0 400,2.5 0,5"></polyline>
+              </svg>
+            <p>A {this.state.interaction_trait} person.</p>
+            <p> With {this.state.appearance}</p>
+            <p>{this.state.high_ability} but {this.state.low_ability}</p>
+            <p>{this.state.talent}</p>
+            <p>{this.state.mannerism}</p>
+            <p><strong>Secret:</strong> {this.state.secret}</p>
+          </div>
+        }
 			</div>
 			);
 	}
