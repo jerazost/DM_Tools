@@ -431,7 +431,7 @@ button:focus {
     display: inline; }
 
 .races__raceCard--preview:hover {
-  box-shadow: 0 0 2.5em #282218;
+  box-shadow: 0 0 2.5em #f5b74b;
   cursor: pointer; }
 
 .races__raceCard__icon {
@@ -462,13 +462,16 @@ button:focus {
     margin-right: 1.6rem; }
 
 .classCard:hover {
-  box-shadow: 0 0 2.5em #282218;
+  box-shadow: 0 0 2.5em #f5b74b;
   cursor: pointer; }
 
 .classCard__icon {
   width: 3rem;
   filter: invert(80%);
   float: right; }
+
+.levelTable {
+  background: #FDF1DC; }
 
 .dice {
   padding: 1.2rem;

@@ -162,7 +162,7 @@
 	}
 }
 .races__raceCard--preview:hover {
-	box-shadow: 0 0 2.5em darken(#867453, 30%);
+	box-shadow: 0 0 2.5em darken($paper, 30%);
 	cursor: pointer;
 }
 .races__raceCard__icon {
@@ -184,7 +184,7 @@
 	margin:  .5rem 2rem;
 	display: inline-block;
 	min-width: 10%;
-	background: #FDF1DC;
+	background: $paper;
 	padding: 5px 10px 20px;
 	box-shadow: 0 0 .8em #867453;
 	h2 {
@@ -195,7 +195,7 @@
 }
 
 .classCard:hover {
-	box-shadow: 0 0 2.5em darken(#867453, 30%);
+	box-shadow: 0 0 2.5em darken($paper, 30%);
 	cursor: pointer;
 }
 
@@ -203,5 +203,8 @@
 	width: 3rem;
 	filter: invert(80%);
 	float: right;
+}
 
+.levelTable {
+	background: $paper;
 }
