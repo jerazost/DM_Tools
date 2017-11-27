@@ -16,7 +16,7 @@ class ChooseSkillsAndEquipment extends React.Component {
         return (
         <div className="createPage">
             <div className="create__col">
-                <button onClick={this.props.handleNext}>Back</button>
+                <button onClick={this.props.handleBack}>Back</button>
             </div>
             <div className="create__col">
                 <FormListSelect 
