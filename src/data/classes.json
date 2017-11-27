@@ -16,7 +16,7 @@
             "2 Handaxes",
             "Any simple weapon"
           ],
-          "An explorer’s pack and four javelins"
+          ["An explorer’s pack and four javelins"]
         ]
       },
       "Proficiencies": {

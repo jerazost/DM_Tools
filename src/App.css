@@ -406,7 +406,7 @@ button:focus {
   background: #898982;
   cursor: pointer; }
 
-.racePage {
+.createPage {
   display: flex; }
 
 .races {
@@ -436,15 +436,10 @@ button:focus {
 
 .races__raceCard__icon {
   width: 6rem;
-  display: inline-block;
-  float: right;
   margin-right: 2rem;
   filter: invert(80%); }
 
-.classes {
-  display: flex; }
-
-.classes__col {
+.create__col {
   display: flex;
   flex-direction: column; }
 
@@ -472,6 +467,33 @@ button:focus {
 
 .levelTable {
   background: #FDF1DC; }
+
+.paperCard {
+  background: #FDF1DC;
+  padding: 5px 10px 20px;
+  box-shadow: 0 0 .8em #867453; }
+
+.formListCard {
+  display: flex;
+  background: #454545;
+  width: 40rem;
+  flex-wrap: wrap; }
+
+.formListCard__item {
+  background: red;
+  color: white;
+  margin: 1.6rem;
+  padding: 1.2rem 3.2rem; }
+
+.formListCard__item--active {
+  background: blue;
+  box-shadow: 0 0 .8em #867453; }
+
+.formMultipleOptionsCard {
+  display: flex;
+  background: #454545;
+  width: 40rem;
+  flex-wrap: wrap; }
 
 .dice {
   padding: 1.2rem;

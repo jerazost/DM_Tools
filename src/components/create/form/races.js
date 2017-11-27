@@ -97,7 +97,7 @@ class ChooseRace extends React.Component {
 		return (
 		<div>
 			<h1>Choose Race</h1>
-			<div className="racePage">
+			<div className="createPage">
 				<div className="races" onClick={this.handleRaceChange}>
 				{raceList.map((race, i) => (
 					<RacePreview {...race} key={i}/>

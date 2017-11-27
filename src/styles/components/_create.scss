@@ -135,7 +135,7 @@
 	background: darken($light-background, 40%);
 	cursor: pointer;
 }
-.racePage {
+.createPage {
 	display: flex;
 }
 .races{
@@ -167,15 +167,10 @@
 }
 .races__raceCard__icon {
 	width: 6rem;
-	display: inline-block;
-	float: right;
 	margin-right: 2rem;
 	filter: invert(80%);
 }
-.classes {
-	display: flex;
-}
-.classes__col {
+.create__col {
 	display: flex;
 	flex-direction: column;
 }
@@ -207,4 +202,34 @@
 
 .levelTable {
 	background: $paper;
+}
+
+.paperCard {
+	background: $paper;
+	padding: 5px 10px 20px;
+	box-shadow: 0 0 .8em #867453;
+}
+.formListCard {
+	display: flex;
+	background: $background;
+	width: 40rem;
+	flex-wrap: wrap;
+}
+
+.formListCard__item {
+	background: red;
+	color: white;
+	margin: $m-size;
+	padding: $s-size $l-size;
+}
+.formListCard__item--active {
+	background: blue;
+	box-shadow: 0 0 .8em #867453;
+}
+
+.formMultipleOptionsCard {
+	display: flex;
+	background: $background;
+	width: 40rem;
+	flex-wrap: wrap;
 }

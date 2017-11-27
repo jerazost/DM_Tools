@@ -2,16 +2,16 @@ import React from 'react';
 const classes = require('../../../data/classes.json');
 console.log(classes);
 
-const CheckboxCard = props => (
-	<div>
-		{props.list.map((l, i) => 
-			<div key={i}>
-				<input id={l} type="checkbox"/>
-				<label for={l}>{l}</label>
-			</div>
-		)}
-	</div>
-)
+// const CheckboxCard = props => (
+// 	<div>
+// 		{props.list.map((l, i) => 
+// 			<div key={i}>
+// 				<input id={l} type="checkbox"/>
+// 				<label for={l}>{l}</label>
+// 			</div>
+// 		)}
+// 	</div>
+// )
 
 const LevelTable = props => {
 	const tableHeads = Object.keys(props);
@@ -72,22 +72,22 @@ class ChooseClass extends React.Component{
 		return (
 		<div>
 			<h1>Choose Class</h1>
-			<div className="classes">
-				<div className="classes__col">
+			<div className="createPage">
+				<div className="create__col">
 					<button onClick={this.props.handleBack}>Back</button>
 				</div>
-				<div className="classes__col">
+				<div className="create__col">
 				{this.classList.map((n, i) => 
 					<ClassCardPreview {...classes[n]} 
 					handleChangeActiveClass={this.handleChangeActiveClass} 
 					key={i}/>
 				)}
 				</div>
-				<div className="classes__col">
+				<div className="create__col">
 					<LevelTable {...classes[this.state.activeClass]["Level Table"]}/>
 				</div>
-				<div className="classes__col">
-					
+				<div className="create__col">
+					<button onClick={this.props.handleNext}>Next</button>
 				</div>
 			</div>
 		</div>
