@@ -228,8 +228,17 @@
 }
 
 .formMultipleOptionsCard {
-	display: flex;
 	background: $background;
-	width: 40rem;
-	flex-wrap: wrap;
+	font-size: $m-size;
+}
+.formMultipleOptionsCard__line {
+	display: flex;
+	padding: $m-size;
+	color: white;
+	label {
+		margin: $s-size
+	}
+	input {
+		margin-right: $s-size;
+	}
 }

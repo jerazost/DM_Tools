@@ -490,10 +490,17 @@ button:focus {
   box-shadow: 0 0 .8em #867453; }
 
 .formMultipleOptionsCard {
-  display: flex;
   background: #454545;
-  width: 40rem;
-  flex-wrap: wrap; }
+  font-size: 1.6rem; }
+
+.formMultipleOptionsCard__line {
+  display: flex;
+  padding: 1.6rem;
+  color: white; }
+  .formMultipleOptionsCard__line label {
+    margin: 1.2rem; }
+  .formMultipleOptionsCard__line input {
+    margin-right: 1.2rem; }
 
 .dice {
   padding: 1.2rem;

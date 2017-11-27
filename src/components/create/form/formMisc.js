@@ -11,16 +11,20 @@ export class FormMultipleOptions extends React.Component {
 	}
 	render() {
 		return (
-			<div className="formMultipleOptionsCard">
-				{this.props.list.map((subList,i) => 
-					<div key={i} onChange={this.handleChange}>
-						{subList.map((option, j) => 
-							<label key={j}>
-								<input type="checkbox" value={option}/>{option}
-							</label>
-						)}
-					</div>
-				)}
+			<div>
+				<h2>Choose one from each</h2>
+				<div className="formMultipleOptionsCard">
+					{this.props.list.map((subList,i) => 
+						<form key={i} onChange={this.handleChange} 
+						className="formMultipleOptionsCard__line">
+							{subList.map((option, j) => 
+								<label key={j}>
+									<input type="checkbox" value={option}/>{option}
+								</label>
+							)}
+						</form>
+					)}
+				</div>
 			</div>
 		)
 	}
