@@ -1,7 +1,6 @@
 import React from 'react';
 //import {generateNPC} from './npcGenerator';
 import {capFirst} from '../utils';
-import {generateNPC} from './npcGenerator';
 const buildings = require('../../data/environments.json').environment.settlement.building;
 console.log(buildings);
 
@@ -16,13 +15,18 @@ const pickRandArr = list => {
 }
 
 const generateBuilding = () => {
-    const key = pickRandObjKey(buildings);
-    const randomBuilding = buildings[key];
+    const buildingKey = pickRandObjKey(buildings);
+    const randomBuilding = buildings[buildingKey];
+    const typeKey = pickRandObjKey(randomBuilding.type);
+    const randomType = randomBuilding.type[typeKey];
+    console.log(randomType);
     return {
-        name: capFirst(key),
-        type: pickRandArr(randomBuilding.type),
-        size: pickRandArr(randomBuilding.size)
-        //name: pickRandArr(randomBuilding.name)
+        name: capFirst(buildingKey),
+        typeText: capFirst(typeKey),
+        size: pickRandArr(randomBuilding.size),
+        detail: pickRandArr(randomType.detail),
+        secret: pickRandArr(randomType.secret),
+        generalFeature: pickRandArr(randomBuilding.general_feature)
     }  
 }
 
@@ -45,7 +49,10 @@ class BuildingGenerator extends React.Component {
                 <svg height="5" width="100%" className="tapered-rule">
                 <polyline points="0,0 400,2.5 0,5"></polyline>
                 </svg>
-                <p>{this.state.type}</p>
+                <p>{this.state.typeText}</p>
+                <p>{this.state.detail}</p>
+                <p>{this.state.secret}</p>
+                <p>{this.state.generalFeature}</p>
              </div>
             }
         </div>

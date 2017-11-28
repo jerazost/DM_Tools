@@ -72,13 +72,18 @@
             "quiet, low-key bar": {
               "detail": [
                 "The bartender is half-asleep",
+                "The guests at the bar stop their conversations abruptly when your party enters",
+                "The bar is completely empty except for the staff",
                 "Some of the guests are reading books",
                 "A group of people are sitting in a table discussing documents"
               ],
               "secret": [
                 "The back room has a magic item wrapped in shipping paper",
+                "The bar is a secret gathering place for a local cult",
+                "The bartender is a spy",
+                "The owner makes the best alcohol in the area",
                 "The owner waters down the spirits to cut costs"
-              ] 
+              ]
             },
             "Raucous dive": {
               "detail": [
@@ -90,37 +95,116 @@
               ],
               "secret": [
                 "The owner of the bar is a wanted criminal with a bounty",
-                "There is a pickpocket in this bar who will attempt to steal from a player"
+                "There is a pickpocket in this bar who will attempt to steal from a player",
+                "The bartender tends to cast spells onto rude customers' drinks",
+                "The bar is a front for an illegal substance production company",
+                "The bar hosts weekly secret brawl clubs"
               ]
             },
             "Gathering place for a secret society": {
-              "detail": [],
-              "secret": [] 
+              "detail": [
+                "A large dwarf stands guard at the front door",
+                "The entrance is locked by a puzzle",
+                "The interior is lavishly decorated with purple furniture and draped cloth",
+                "The interior is crowded with candles",
+                "Every guest inside speaks in riddles/code"
+                ],
+              "secret": [
+                "The owner sells illegal weapons",
+                "Guests tend to lose track of time when they enter the building",
+                "The society is planning to overthrow the powers that be",
+                "The society is comprised of the settlement's elites who gather to plan politics",
+                "The guests are all part of a cult"
+                ]
             },
             "Upper-class dining club": {
-              "detail": [],
-              "secret": [] 
+              "detail": [
+                "The club serves unrecognizable dishes",
+                "Every item is exorbitantly overpriced",
+                "The club offers free breadsticks",
+                "The servers act very rudely",
+                "Every server flirts with the same member of your party"
+                ],
+              "secret": [
+                "The servers are all slaves",
+                "The food is made out of endangered beasts",
+                "The owner is planning to poison a guest present in the club",
+                "The owner casted an illusion spell to make the restaurant seem busier than it actually is",
+                "The owner suffers from Lycanthropy"
+                ]
             },
             "Gambling den": {
               "detail": [
-                "The gambling area is open and games are ongoing"
+                "The gambling area is open and games are ongoing",
+                "The gambling area is roped off and guarded by two large humans",
+                "Everyone in the den is huddled around a game cheering on the players",
+                "The guests all recieve outlandish costumes upon entry",
+                "The den supplies free alcoholic beverages"
               ],
-              "secret": [] 
+              "secret": [
+                "A guest is planning to hustle a member of your party",
+                "All the games are rigged",
+                "The owner of the bar is a serial killer",
+                "Several guests are planning to rob the den",
+                "Instead of awarding currency, the den awards winners with mystery boxes"
+                ]
             },
             "Caters to specific race or guild": {
-              "detail": [],
-              "secret": [] 
+              "detail": [
+                "Entrance can only be granted by invitation",
+                "The bar is pristine",
+                "The guests speak primarily in their own language",
+                "All the guests are remarkably old",
+                "The bar is cozy and cluttered"
+                ],
+              "secret": [
+                "The guests don't take kindly to anyone different than them",
+                "The club is on top of an ancient burial ground",
+                "The bartender is a spy for an opposing group",
+                "The owner just broke the bartender's heart, and the bartender is trying to look like they aren't bothered by it",
+                "The owner was once a famous pirate"
+                ]
             },
             "Members-only club": {
-              "detail": [],
-              "secret": [] 
+              "detail": [
+                "The guard will let you in, for the right price",
+                "Membership is only granted to the most intelligent",
+                "The interior is eerily clean",
+                "The shabby art is on display throughout the club",
+                "Every member is wearing the same clothing"
+              ],
+              "secret": [
+                "The members are all cannibals",
+                "The members are searching for 'The Chosen One' to lead them",
+                "Underneath the club is a safehouse for fugitives",
+                "Initiation into the club requires a malicious act",
+                "The staff will do everything they can to prevent your party from leaving"
+              ]
             },
             "Brothel": {
-              "detail": [],
-              "secret": [] 
+              "detail": [
+                "The brothel is diversely filled with different races, genders, and orientations",
+                "The interior is a large room littered with cushions and pillows",
+                "The building is empty and run down. Only a few workers are present",
+                "There are dozens of small private rooms, and it is suprisingly silent",
+                "All the guests are wearing masks"
+              ],
+              "secret": [
+                "The owner is in love with one of the workers, and is struggling with their promiscuity",
+                "The workers are planning a strike to receive better payment",
+                "The owner forcefully recruits attractive guests to be his workers",
+                "The lead worker has a bounty on their head",
+                "The workers tend to pick-pocket their customers"
+              ]
             }
           },
-          "general_feature": []
+          "general_feature": [
+            "The seats are surpisingly comfortable",
+            "A thick smoke wafts through the interior",
+            "A band plays in the corner of the bar",
+            "There is a fountain in the center of the building",
+            "There is a hole in the roof"
+          ]
         },
         "residence": {
           "size": [
@@ -128,17 +212,42 @@
             "medium",
             "large"
           ],
-          "type": [
-            "Abandoned squat",
-            "Middle-class home",
-            "Upper-class home",
-            "Crowded tenement",
-            "Orphanage",
-            "Hidden slavers' den",
-            "Front for a secret cult",
-            "Lavish, guarded mansion"
-          ],
-          "general_feature": []
+          "type": {
+            "Abandoned squat": {
+
+            },
+            "Middle-class home": {
+
+            },
+            "Upper-class home": {
+
+            },
+            "Crowded tenement": {
+
+            },
+            "Orphanage": {
+
+            },
+            "Hidden slavers' den": {
+
+            },
+            "Front for a secret cult": {
+
+            },
+            "Lavish, guarded mansion": {
+
+            }
+          },
+          "general_feature": [
+            "The residence has a dirt floor",
+            "The entry room is cluttered with stacked books",
+            "A thick layer of dust covers every surface",
+            "The building doesn't have any windows",
+            "The rooms are all chaotically organized",
+            "The rooms are all perfectly tidy",
+            "The residence is filled with plants",
+            "The residents have several pets"
+          ]
         },
         "religious": {
           "size": [
@@ -146,15 +255,33 @@
             "medium",
             "large"
           ],
-          "type": [
-            "Temple to a good or neutral deity",
-            "Temple to a false deity (run by charlatan priests)",
-            "Home of ascetics",
-            "Abandoned shrine",
-            "Library dedicated to religious study",
-            "Hidden shrine to a fiend or evil deity"
-          ],
-          "general_feature": []
+          "type": {
+            "Temple to a good or neutral deity": {
+
+            },
+            "Temple to a false deity (run by charlatan priests)": {
+
+            },
+            "Home of ascetics": {
+
+            },
+            "Abandoned shrine": {
+
+            },
+            "Library dedicated to religious study": {
+
+            },
+            "Hidden shrine to a fiend or evil deity": {
+
+            }
+          },
+          "general_feature": [
+            "The area is filled with depictions of a deity",
+            "The area is littered with offerings",
+            "The area smells like incense",
+            "In the center stands an impressive statue",
+            "There are torches surrounding the structure"
+          ]
         },
         "warehouse": {
           "size": [
@@ -162,39 +289,105 @@
             "medium",
             "large"
           ],
-          "type": [
-            "Empty or abandoned",
-            "Jewels, guarded",
-            "Gold pieces, guarded",
-            "Enchanted items, guarded",
-            "Acorns",
-            "Hay",
-            "Barley",
-            "Cloth",
-            "Metals",
-            "Crops",
-            "Grain",
-            "Pigs",
-            "Horses",
-            "Cows",
-            "Goats",
-            "Chickens",
-            "Guard supplies",
-            "Magical contraband",
-            "Broken weapons",
-            "Swords",
-            "Leather armor",
-            "Hammers, saws, and axes",
-            "Spices",
-            "Paper",
-            "Projectiles",
-            "Secretly cursed items",
-            "Foreign goods",
-            "Foreign weapons",
-            "Captive beasts",
-            "Secret smuggler's den"
-          ],
-          "general_feature": []
+          "type": {
+            "Empty or abandoned": {
+
+            },
+            "Jewels, guarded": {
+
+            },
+            "Gold pieces, guarded": {
+
+            },
+            "Enchanted items, guarded": {
+
+            },
+            "Acorns": {
+
+            },
+            "Hay": {
+
+            },
+            "Barley": {
+
+            },
+            "Cloth": {
+
+            },
+            "Metals": {
+
+            },
+            "Crops": {
+
+            },
+            "Grain": {
+
+            },
+            "Pigs": {
+
+            },
+            "Horses": {
+
+            },
+            "Cows": {
+
+            },
+            "Goats": {
+
+            },
+            "Chickens": {
+
+            },
+            "Guard supplies": {
+
+            },
+            "Magical contraband": {
+
+            },
+            "Broken weapons": {
+
+            },
+            "Swords": {
+
+            },
+            "Leather armor": {
+
+            },
+            "Hammers, saws, and axes": {
+
+            },
+            "Spices": {
+
+            },
+            "Paper": {
+
+            },
+            "Projectiles": {
+
+            },
+            "Secretly cursed items": {
+
+            },
+            "Foreign goods": {
+
+            },
+            "Foreign weapons": {
+
+            },
+            "Captive beasts": {
+
+            },
+            "Secret smuggler's den": {
+
+            }
+          },
+          "general_feature": [
+            "There doesn't appear to be an entrance",
+            "The warehouse is dilapidated",
+            "Most people seem to avoid the area",
+            "The warehouse appears in perfect condition",
+            "A strange sound is coming from inside the warehouse"
+          ]
         },
         "shop": {
           "size": [
@@ -202,29 +395,75 @@
             "medium",
             "large"
           ],
-          "type": [
-            "Pawnshop",
-            "Herbs & incense",
-            "Fruits & vegetables",
-            "Dried meats",
-            "Pottery",
-            "Undertaker",
-            "Books",
-            "Moneylender",
-            "Weapons & armor",
-            "Chandler",
-            "Smithy",
-            "Carpenter",
-            "Weaver",
-            "Jeweler",
-            "Baker",
-            "Mapmaker",
-            "Tailor",
-            "Ropemaker",
-            "Mason",
-            "Scribe"
-          ],
-          "general_feature": []
+          "type": {
+            "Pawnshop": {
+
+            },
+            "Herbs & incense": {
+
+            },
+            "Fruits & vegetables": {
+
+            },
+            "Dried meats": {
+
+            },
+            "Pottery": {
+
+            },
+            "Undertaker": {
+
+            },
+            "Books": {
+
+            },
+            "Moneylender": {
+
+            },
+            "Weapons & armor": {
+
+            },
+            "Chandler": {
+
+            },
+            "Smithy": {
+
+            },
+            "Carpenter": {
+
+            },
+            "Weaver": {
+
+            },
+            "Jeweler": {
+
+            },
+            "Baker": {
+
+            },
+            "Mapmaker": {
+
+            },
+            "Tailor": {
+
+            },
+            "Ropemaker": {
+
+            },
+            "Mason": {
+
+            },
+            "Scribe": {
+              
+            }
+          },
+          "general_feature": [
+            "An open air stand",
+            "A secure building, with a large front window",
+            "The building has a large, flashy sign advertising its wares",
+            "The building has a wanted sign for a theif",
+            "The building looks like it was built hundreds of years ago"
+          ]
         }
       }
     }

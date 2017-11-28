@@ -3,9 +3,6 @@ import DiceRoller from './play/diceRoller';
 import CombatTracker from './play/combatTracker';
 import Generators from './play/generators';
 
-
-
-
 class Play extends React.Component {
 	constructor(props) {
 		super(props);
