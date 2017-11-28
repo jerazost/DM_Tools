@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 const npc = require('../../data/npc.json');
 const names = require('../../data/names.json');
 
-const pickRandRecrsive = list => {
+const pickRandRecursive = list => {
 	let type = typeof list;
 	if(type === 'array'){
 		const r = Math.floor(Math.random() * list.length);
@@ -11,7 +11,7 @@ const pickRandRecrsive = list => {
 		if(type === 'string') {
 			return list[r];
 		}else if(type === 'object' || type === 'array'){
-			return pickRandRecrsive(list[r]);
+			return pickRandRecursive(list[r]);
 		}
 
 	}else if (type === 'object') {
@@ -20,7 +20,7 @@ const pickRandRecrsive = list => {
 		const val = list[keys[r]];
 		type = typeof val;
 		if (type === 'string') return val;
-		else if (type === 'object' || type === 'array') return pickRandRecrsive(val);
+		else if (type === 'object' || type === 'array') return pickRandRecursive(val);
 	}else{
 		console.error('Improper type passed to pickRandRecursive')
 	}
@@ -33,17 +33,17 @@ class NPCGenerator extends React.Component {
 	} 
 	generateNPC = () => {
 		this.setState({
-			name: pickRandRecrsive(names), 
-			appearance: pickRandRecrsive(npc.appearance),
-			low_ability: pickRandRecrsive(npc.abilities.low_ability),
-			high_ability: pickRandRecrsive(npc.abilities.high_ability),
-			talent: pickRandRecrsive(npc.talents),
-			interaction_trait: pickRandRecrsive(npc.interaction_traits),
-			mannerism: pickRandRecrsive(npc.mannerisms),
-			ideal_1: pickRandRecrsive(npc.ideals),
-			ideal_2: pickRandRecrsive(npc.ideals),
-			bond: pickRandRecrsive(npc.bonds),
-			secret: pickRandRecrsive(npc.flaws_and_secrets)
+			name: pickRandRecursive(names), 
+			appearance: pickRandRecursive(npc.appearance),
+			low_ability: pickRandRecursive(npc.abilities.low_ability),
+			high_ability: pickRandRecursive(npc.abilities.high_ability),
+			talent: pickRandRecursive(npc.talents),
+			interaction_trait: pickRandRecursive(npc.interaction_traits),
+			mannerism: pickRandRecursive(npc.mannerisms),
+			ideal_1: pickRandRecursive(npc.ideals),
+			ideal_2: pickRandRecursive(npc.ideals),
+			bond: pickRandRecursive(npc.bonds),
+			secret: pickRandRecursive(npc.flaws_and_secrets)
 		},() => console.log(this.state));
 	}
 
