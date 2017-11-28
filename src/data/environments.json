@@ -1,0 +1,186 @@
+{
+  "environment": {
+    "settlement": {
+      "building": {
+        "tavern": {
+          "size": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "name": {
+            "first": [
+              "The Silver",
+              "The Golden",
+              "The Staggering",
+              "The Laughing",
+              "The Prancing",
+              "The Gilded",
+              "The Running",
+              "The Howling",
+              "The Slaughtered",
+              "The Leering",
+              "The Drunken",
+              "The Leaping",
+              "The Roaring",
+              "The Frowning",
+              "The Lonely",
+              "The Wandering",
+              "The Mysterious",
+              "The Barking",
+              "The White",
+              "The Gray",
+              "The Black",
+              "The Gleaming",
+              "The Babbling",
+              "The Smitten",
+              "The Dancing",
+              "The Brawling",
+              "The Wilting"
+            ],
+            "second": [
+              "Eel",
+              "Lily",
+              "Dolphin",
+              "Dwarf",
+              "Pegasus",
+              "Pony",
+              "Rose",
+              "Stag",
+              "Wolf",
+              "Lamb",
+              "Demon",
+              "Goat",
+              "Spirit",
+              "Horde",
+              "Jester",
+              "Mountain",
+              "Eagle",
+              "Satyr",
+              "Dog",
+              "Spider",
+              "Star",
+              "Mandolin",
+              "Arrow",
+              "Beholder",
+              "Soldier",
+              "Orchid",
+              "Oak"
+            ]
+          },
+          "type": [
+            "quiet, low-key bar",
+            "Raucous dive",
+            "Thieves' guild hangout",
+            "Gathering place for a secret society",
+            "Upper-class dining club",
+            "Gambling den",
+            "Caters to specific race or guild",
+            "Members-only club",
+            "Brothel"
+          ]
+        },
+        "residence": {
+          "size": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "type": [
+            "Abandoned squat",
+            "Middle-class home",
+            "Upper-class home",
+            "Crowded tenement",
+            "Orphanage",
+            "Hidden slavers' den",
+            "Front for a secret cult",
+            "Lavish, guarded mansion"
+          ]
+        },
+        "religious": {
+          "size": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "type": [
+            "Temple to a good or neutral deity",
+            "Temple to a false deity (run by charlatan priests)",
+            "Home of ascetics",
+            "Abandoned shrine",
+            "Library dedicated to religious study",
+            "Hidden shrine to a fiend or evil deity"
+          ]
+        },
+        "warehouse": {
+          "size": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "type": [
+            "Empty or abandoned",
+            "Jewels, guarded",
+            "Gold pieces, guarded",
+            "Enchanted items, guarded",
+            "Acorns",
+            "Hay",
+            "Barley",
+            "Cloth",
+            "Metals",
+            "Crops",
+            "Grain",
+            "Pigs",
+            "Horses",
+            "Cows",
+            "Goats",
+            "Chickens",
+            "Guard supplies",
+            "Magical contraband",
+            "Broken weapons",
+            "Swords",
+            "Leather armor",
+            "Hammers, saws, and axes",
+            "Spices",
+            "Paper",
+            "Projectiles",
+            "Secretly cursed items",
+            "Foreign goods",
+            "Foreign weapons",
+            "Captive beasts",
+            "Secret smuggler's den"
+          ]
+        },
+        "shop": {
+          "size": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "type": [
+            "Pawnshop",
+            "Herbs & incense",
+            "Fruits & vegetables",
+            "Dried meats",
+            "Pottery",
+            "Undertaker",
+            "Books",
+            "Moneylender",
+            "Weapons & armor",
+            "Chandler",
+            "Smithy",
+            "Carpenter",
+            "Weaver",
+            "Jeweler",
+            "Baker",
+            "Mapmaker",
+            "Tailor",
+            "Ropemaker",
+            "Mason",
+            "Scribe"
+          ]
+        }
+      }
+    }
+  }
+}

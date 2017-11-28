@@ -1,7 +1,10 @@
 import React from 'react';
 import DiceRoller from './play/diceRoller';
 import CombatTracker from './play/combatTracker';
-import NPCGenerator from './play/npcGenerator';
+import Generators from './play/generators';
+
+
+
 
 class Play extends React.Component {
 	constructor(props) {
@@ -28,7 +31,7 @@ class Play extends React.Component {
 					>Generators</h1>
 				</div>
 			{this.state.activeState === "COMBAT" && <CombatTracker />}
-			{this.state.activeState === "GENERATORS" && <NPCGenerator />}
+			{this.state.activeState === "GENERATORS" && <Generators />}
 				<DiceRoller />
 			</div>
 			)
