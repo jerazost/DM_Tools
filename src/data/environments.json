@@ -213,29 +213,69 @@
             "large"
           ],
           "type": {
-            "Abandoned squat": {
+            "Abandoned squat":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Middle-class home": {
+            "Middle-class home":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Upper-class home": {
+            "Upper-class home":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Crowded tenement": {
+            "Crowded tenement":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Orphanage": {
+            "Orphanage":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Hidden slavers' den": {
+            "Hidden slavers' den":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Front for a secret cult": {
+            "Front for a secret cult":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Lavish, guarded mansion": {
+            "Lavish, guarded mansion":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             }
           },
           "general_feature": [
@@ -256,23 +296,53 @@
             "large"
           ],
           "type": {
-            "Temple to a good or neutral deity": {
+            "Temple to a good or neutral deity":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Temple to a false deity (run by charlatan priests)": {
+            "Temple to a false deity (run by charlatan priests)":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Home of ascetics": {
+            "Home of ascetics":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Abandoned shrine": {
+            "Abandoned shrine":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Library dedicated to religious study": {
+            "Library dedicated to religious study":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Hidden shrine to a fiend or evil deity": {
+            "Hidden shrine to a fiend or evil deity":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             }
           },
           "general_feature": [
@@ -290,95 +360,245 @@
             "large"
           ],
           "type": {
-            "Empty or abandoned": {
+            "Empty or abandoned":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Jewels, guarded": {
+            "Jewels, guarded":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Gold pieces, guarded": {
+            "Gold pieces, guarded":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Enchanted items, guarded": {
+            "Enchanted items, guarded":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Acorns": {
+            "Acorns":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Hay": {
+            "Hay":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Barley": {
+            "Barley":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Cloth": {
+            "Cloth":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Metals": {
+            "Metals":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Crops": {
+            "Crops":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Grain": {
+            "Grain":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Pigs": {
+            "Pigs":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Horses": {
+            "Horses":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Cows": {
+            "Cows":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Goats": {
+            "Goats":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Chickens": {
+            "Chickens":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Guard supplies": {
+            "Guard supplies":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Magical contraband": {
+            "Magical contraband":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Broken weapons": {
+            "Broken weapons":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Swords": {
+            "Swords":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Leather armor": {
+            "Leather armor":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Hammers, saws, and axes": {
+            "Hammers, saws, and axes":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Spices": {
+            "Spices":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Paper": {
+            "Paper":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Projectiles": {
+            "Projectiles":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Secretly cursed items": {
+            "Secretly cursed items":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Foreign goods": {
+            "Foreign goods":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Foreign weapons": {
+            "Foreign weapons":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Captive beasts": {
+            "Captive beasts":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Secret smuggler's den": {
+            "Secret smuggler's den":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             }
           },
           "general_feature": [
@@ -396,65 +616,160 @@
             "large"
           ],
           "type": {
-            "Pawnshop": {
+            "Pawnshop":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Herbs & incense": {
+            "Herbs & incense":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Fruits & vegetables": {
+            "Fruits & vegetables":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Dried meats": {
+            "Dried meats":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Pottery": {
+            "Pottery":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Undertaker": {
+            "Undertaker":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Books": {
+            "Books":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Moneylender": {
+            "Moneylender":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Weapons & armor": {
+            "Weapons & armor":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Chandler": {
+            "Chandler":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Smithy": {
+            "Smithy":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Carpenter": {
+            "Carpenter":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Weaver": {
+            "Weaver":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Jeweler": {
+            "Jeweler":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Baker": {
+            "Baker":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Mapmaker": {
+            "Mapmaker":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Tailor": {
+            "Tailor":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Ropemaker": {
+            "Ropemaker":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
-            "Mason": {
+            "Mason":{
+              "details":[
 
+              ],
+              "secret":[
+                
+              ] 
             },
             "Scribe": {
-              
+
             }
           },
           "general_feature": [
