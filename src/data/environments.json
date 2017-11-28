@@ -372,10 +372,17 @@
           "type": {
             "Empty or abandoned":{
               "details":[
-
+                "The structure seems unstable, cracks line the walls",
+                "There is no light, as if something needed the darkness",
+                "The interior is eerily clean",
+                "The building has a grotesque smell radiating from it",
+                "The floors and walls seem to have this very faint glow"
               ],
               "secret":[
-
+                "This is the home of a beast",
+                "This is a popular spot for malicious deals",
+                "The warehouse seems to enjoy the company",
+                "This is just some persons warehouse"
               ] 
             },
             "Jewels, guarded":{
