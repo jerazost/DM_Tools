@@ -297,7 +297,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Front for a secret cult":{
@@ -305,7 +305,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Lavish, guarded mansion":{
@@ -313,7 +313,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             }
           },
@@ -337,18 +337,28 @@
           "type": {
             "Temple to a good or neutral deity":{
               "details":[
-
+                "One of the shrines to the deity has been damaged",
+                "An idol sits on a pedestal surrounded by offerings",
+                "The ceiling has holes that during a special time of year shine light on a part of a mural",
+                "A worshiper is crying and praying in front of the statue",
+                "The outside of the temple has been vandalized"
               ],
               "secret":[
-                
+                "A book that lies on a table is cursed",
+                "Followers of the temple's true deity are persecuted and the temple is fashioned to appear to worship another",
+                "One of the occupants in the temple is an avatar of the deity the temple worships in disguise",
+                "The temple is largely funded by a crime boss who worships its deity",
+                "One of the artifacts on display is a magic item"
               ] 
             },
             "Temple to a false deity (run by charlatan priests)":{
               "details":[
-
+                "The priests regularly fake miracles with a public audience to attract followers",
+                "The priests charge through the nose for 'energy readings'",
+                "The temple has very strong political influence"
               ],
               "secret":[
-                
+                "The false deity is actually "
               ] 
             },
             "Home of ascetics":{
@@ -356,7 +366,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Abandoned shrine":{
@@ -364,7 +374,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Library dedicated to religious study":{
@@ -372,7 +382,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Hidden shrine to a fiend or evil deity":{
@@ -380,7 +390,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             }
           },
@@ -401,10 +411,17 @@
           "type": {
             "Empty or abandoned":{
               "details":[
-
+                "The structure seems unstable, cracks line the walls",
+                "There is no light, as if something needed the darkness",
+                "The interior is eerily clean",
+                "The building has a grotesque smell radiating from it",
+                "The floors and walls seem to have this very faint glow"
               ],
               "secret":[
-                
+                "This is the home of a beast",
+                "This is a popular spot for malicious deals",
+                "The warehouse seems to enjoy the company",
+                "This is just some persons warehouse"
               ] 
             },
             "Jewels, guarded":{
@@ -412,7 +429,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Gold pieces, guarded":{
@@ -420,7 +437,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Enchanted items, guarded":{
@@ -428,7 +445,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Acorns":{
@@ -436,7 +453,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Hay":{
@@ -444,7 +461,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Barley":{
@@ -452,7 +469,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Cloth":{
@@ -460,7 +477,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Metals":{
@@ -468,7 +485,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Crops":{
@@ -476,7 +493,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Grain":{
@@ -484,7 +501,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Pigs":{
@@ -492,7 +509,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Horses":{
@@ -500,7 +517,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Cows":{
@@ -508,7 +525,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Goats":{
@@ -516,7 +533,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Chickens":{
@@ -524,7 +541,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Guard supplies":{
@@ -532,7 +549,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Magical contraband":{
@@ -540,7 +557,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Broken weapons":{
@@ -548,7 +565,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Swords":{
@@ -556,7 +573,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Leather armor":{
@@ -564,7 +581,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Hammers, saws, and axes":{
@@ -572,7 +589,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Spices":{
@@ -580,7 +597,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Paper":{
@@ -588,7 +605,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Projectiles":{
@@ -596,7 +613,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Secretly cursed items":{
@@ -604,7 +621,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Foreign goods":{
@@ -612,7 +629,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Foreign weapons":{
@@ -620,7 +637,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Captive beasts":{
@@ -628,7 +645,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Secret smuggler's den":{
@@ -636,7 +653,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             }
           },
@@ -660,7 +677,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Herbs & incense":{
@@ -668,7 +685,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Fruits & vegetables":{
@@ -676,7 +693,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Dried meats":{
@@ -684,7 +701,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Pottery":{
@@ -692,7 +709,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Undertaker":{
@@ -700,7 +717,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Books":{
@@ -708,7 +725,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Moneylender":{
@@ -716,7 +733,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Weapons & armor":{
@@ -724,7 +741,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Chandler":{
@@ -732,7 +749,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Smithy":{
@@ -740,7 +757,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Carpenter":{
@@ -748,7 +765,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Weaver":{
@@ -756,7 +773,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Jeweler":{
@@ -764,7 +781,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Baker":{
@@ -772,7 +789,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Mapmaker":{
@@ -780,7 +797,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Tailor":{
@@ -788,7 +805,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Ropemaker":{
@@ -796,7 +813,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Mason":{
@@ -804,7 +821,7 @@
 
               ],
               "secret":[
-                
+
               ] 
             },
             "Scribe": {
