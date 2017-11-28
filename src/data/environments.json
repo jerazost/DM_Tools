@@ -68,17 +68,59 @@
               "Oak"
             ]
           },
-          "type": [
-            "quiet, low-key bar",
-            "Raucous dive",
-            "Thieves' guild hangout",
-            "Gathering place for a secret society",
-            "Upper-class dining club",
-            "Gambling den",
-            "Caters to specific race or guild",
-            "Members-only club",
-            "Brothel"
-          ]
+          "type": {
+            "quiet, low-key bar": {
+              "detail": [
+                "The bartender is half-asleep",
+                "Some of the guests are reading books",
+                "A group of people are sitting in a table discussing documents"
+              ],
+              "secret": [
+                "The back room has a magic item wrapped in shipping paper",
+                "The owner waters down the spirits to cut costs"
+              ] 
+            },
+            "Raucous dive": {
+              "detail": [
+                "The floor has not been washed in weeks",
+                "A group of guests are sitting at a table with matching tattoos",
+                "A group of guests are sitting at a table with matching clothes",
+                "A group of guests are sitting at a table with matching jewlery",
+                "Lewd art on the wall"
+              ],
+              "secret": [
+                "The owner of the bar is a wanted criminal with a bounty",
+                "There is a pickpocket in this bar who will attempt to steal from a player"
+              ]
+            },
+            "Gathering place for a secret society": {
+              "detail": [],
+              "secret": [] 
+            },
+            "Upper-class dining club": {
+              "detail": [],
+              "secret": [] 
+            },
+            "Gambling den": {
+              "detail": [
+                "The gambling area is open and games are ongoing"
+              ],
+              "secret": [] 
+            },
+            "Caters to specific race or guild": {
+              "detail": [],
+              "secret": [] 
+            },
+            "Members-only club": {
+              "detail": [],
+              "secret": [] 
+            },
+            "Brothel": {
+              "detail": [],
+              "secret": [] 
+            }
+          },
+          "general_feature": []
         },
         "residence": {
           "size": [
@@ -95,7 +137,8 @@
             "Hidden slavers' den",
             "Front for a secret cult",
             "Lavish, guarded mansion"
-          ]
+          ],
+          "general_feature": []
         },
         "religious": {
           "size": [
@@ -110,7 +153,8 @@
             "Abandoned shrine",
             "Library dedicated to religious study",
             "Hidden shrine to a fiend or evil deity"
-          ]
+          ],
+          "general_feature": []
         },
         "warehouse": {
           "size": [
@@ -149,7 +193,8 @@
             "Foreign weapons",
             "Captive beasts",
             "Secret smuggler's den"
-          ]
+          ],
+          "general_feature": []
         },
         "shop": {
           "size": [
@@ -178,7 +223,8 @@
             "Ropemaker",
             "Mason",
             "Scribe"
-          ]
+          ],
+          "general_feature": []
         }
       }
     }

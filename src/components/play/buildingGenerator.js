@@ -1,7 +1,7 @@
 import React from 'react';
 //import {generateNPC} from './npcGenerator';
 import {capFirst} from '../utils';
-import { generateNPC } from './npcGenerator';
+import {generateNPC} from './npcGenerator';
 const buildings = require('../../data/environments.json').environment.settlement.building;
 console.log(buildings);
 
