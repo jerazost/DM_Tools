@@ -215,42 +215,81 @@
           "type": {
             "Abandoned squat":{
               "details":[
-
+                "Dirt flooring",
+                "The building is crawling with bugs",
+                "A heap of belongings are piled in the corner",
+                "The door is off its hinges",
+                "A large symbol is painted on the outside of the house"
               ],
               "secret":[
-                
+                "The residents are well-off, but have decided it would be fun to live like 'the poor people'",
+                "The building is haunted",
+                "The residents are fugitives from a far away land",
+                "The residents are part of a cult",
+                "The building has an undiscovered gold ore deposit underneath it"
               ] 
             },
             "Middle-class home":{
               "details":[
-
+                "The house has many herbs and tools for potion creation",
+                "The house is warm and cozy",
+                "The residents are all very hospitable",
+                "There is a blocked-off door in the house",
+                "There is an extra room available"
               ],
               "secret":[
-                
+                "One resident is planning to kill another",
+                "The house has a hidden magical item",
+                "The residents are magic casters",
+                "The house has a secret passageway",
+                "The head of the household is a theif"
               ] 
             },
             "Upper-class home":{
               "details":[
-
+                "The rooms are maze-like",
+                "The furniture and decor are gaudy",
+                "The residents are all dressed in the finest furs and linens",
+                "There are several well-dressed servants",
+                "There is a room full of trophies"
               ],
               "secret":[
-                
+                "The head of the household is terrified of mushrooms",
+                "The residents are leaders of their settlement, and got rich via bribe money",
+                "The house has a hidden room, holding the family's most rare items",
+                "One resident is planning to run away from home",
+                "One resident is the leader of an illegal trading company"
               ] 
             },
             "Crowded tenement":{
               "details":[
-
+                "Several partitions block off various family areas",
+                "Residents are huddled around several campfires",
+                "The residents all share their resources",
+                "There is a large hole in the wall",
+                "The residents are hosting a party, enjoying their time together"
               ],
               "secret":[
-                
+                "The residents are well off, but due to their race they are not allowed better housing",
+                "The landlord is sabotaging the tenement",
+                "The housing is moments away from a collapse",
+                "One resident is an undercover elite, seeking to analyze the poorer folk",
+                "The people are all part of a faction"
               ] 
             },
             "Orphanage":{
               "details":[
-
+                "The children seem happy and well cared for",
+                "The leader of the orphanage is rather rude",
+                "The leader of the orphanage seems desperate to sell their children",
+                "The children seem to be cautious around new people",
+                "The building seems to be newly built"
               ],
               "secret":[
-                
+                "One child has hired an assassin to kill the orphanage leader",
+                "One child is the leader of a notorious street gang",
+                "The leader of the orphanage is training the children to believe in a fake god",
+                "The "
               ] 
             },
             "Hidden slavers' den":{
