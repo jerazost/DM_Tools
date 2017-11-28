@@ -284,38 +284,6 @@ button:focus {
 .resultCard__AddButton {
   padding: 1.6rem; }
 
-.createPage {
-  padding: 3.2rem; }
-
-.createPage__select {
-  display: flex;
-  flex-direction: row; }
-  .createPage__select h1 {
-    margin-right: 3.2rem;
-    cursor: pointer;
-    padding: 1.2rem 1.6rem; }
-
-.createPage__select__option--active {
-  background: #454545;
-  color: #ecf0f1; }
-
-.createName {
-  background: none;
-  border: none;
-  border-bottom: solid 2px #454545;
-  font-size: 3.2rem; }
-
-.createSubmit {
-  position: absolute;
-  bottom: 3.2rem;
-  margin: 0;
-  left: 40%;
-  padding: 1.6rem;
-  font-size: 1.6rem;
-  background: #454545;
-  color: orange;
-  font-weight: 550; }
-
 .alignmentChart {
   height: 25rem;
   width: 25rem;
@@ -354,61 +322,6 @@ button:focus {
   display: flex;
   flex-direction: row; }
 
-.form__container {
-  flex-grow: 1;
-  text-align: center;
-  color: white; }
-
-.form__ability_score {
-  background: #454545;
-  padding: 1.6rem; }
-  .form__ability_score h3 {
-    margin-top: 0; }
-  .form__ability_score h2 {
-    display: inline;
-    padding: 0 1.2rem; }
-  .form__ability_score button {
-    display: inline; }
-
-.form__row {
-  display: flex; }
-
-.form__col {
-  flex-grow: 1; }
-
-.actionPrompt {
-  padding: 1.6rem;
-  background: #454545; }
-  .actionPrompt input {
-    display: block;
-    margin-top: 1.2rem; }
-
-.actionHeader h2 {
-  display: inline;
-  margin-right: 1.6rem; }
-
-.formSize {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  width: 50%; }
-
-.formSize__option {
-  padding: 1.6rem;
-  display: flex;
-  flex-direction: column; }
-  .formSize__option img {
-    filter: invert(100%); }
-  .formSize__option h2 {
-    text-align: center; }
-
-.formSize__option:hover {
-  background: #898982;
-  cursor: pointer; }
-
-.createPage {
-  display: flex; }
-
 .races {
   display: flex;
   flex-wrap: wrap;
@@ -438,10 +351,6 @@ button:focus {
   width: 6rem;
   margin-right: 2rem;
   filter: invert(80%); }
-
-.create__col {
-  display: flex;
-  flex-direction: column; }
 
 .classCard {
   text-align: left;
@@ -473,17 +382,59 @@ button:focus {
   padding: 5px 10px 20px;
   box-shadow: 0 0 .8em #867453; }
 
+.form__container {
+  flex-grow: 1;
+  text-align: center;
+  color: white; }
+
+.form__ability_score {
+  background: #454545;
+  padding: 1.6rem; }
+  .form__ability_score h3 {
+    margin-top: 0; }
+  .form__ability_score h2 {
+    display: inline;
+    padding: 0 1.2rem; }
+  .form__ability_score button {
+    display: inline; }
+
+.form__row {
+  display: flex; }
+
+.form__col {
+  flex-grow: 1; }
+
+.formSize {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 50%; }
+
+.formSize__option {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column; }
+  .formSize__option img {
+    filter: invert(100%); }
+  .formSize__option h2 {
+    text-align: center; }
+
+.formSize__option:hover {
+  background: #898982;
+  cursor: pointer; }
+
 .formListCard {
   display: flex;
   background: #454545;
-  width: 40rem;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  max-width: 60%; }
 
 .formListCard__item {
   background: red;
   color: white;
   margin: 1.6rem;
-  padding: 1.2rem 3.2rem; }
+  padding: 1.2rem 3.2rem;
+  cursor: pointer; }
 
 .formListCard__item--active {
   background: blue;
@@ -492,15 +443,66 @@ button:focus {
 .formMultipleOptionsCard {
   background: #454545;
   font-size: 1.6rem; }
+  .formMultipleOptionsCard form {
+    border: white solid 3px; }
 
 .formMultipleOptionsCard__line {
-  display: flex;
   padding: 1.6rem;
   color: white; }
   .formMultipleOptionsCard__line label {
     margin: 1.2rem; }
   .formMultipleOptionsCard__line input {
     margin-right: 1.2rem; }
+
+.createPage {
+  padding: 3.2rem; }
+
+.createPage__select {
+  display: flex;
+  flex-direction: row; }
+  .createPage__select h1 {
+    margin-right: 3.2rem;
+    cursor: pointer;
+    padding: 1.2rem 1.6rem; }
+
+.createPage__select__option--active {
+  background: #454545;
+  color: #ecf0f1; }
+
+.createName {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #454545;
+  font-size: 3.2rem; }
+
+.createSubmit {
+  position: absolute;
+  bottom: 3.2rem;
+  margin: 0;
+  left: 40%;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  background: #454545;
+  color: orange;
+  font-weight: 550; }
+
+.actionPrompt {
+  padding: 1.6rem;
+  background: #454545; }
+  .actionPrompt input {
+    display: block;
+    margin-top: 1.2rem; }
+
+.actionHeader h2 {
+  display: inline;
+  margin-right: 1.6rem; }
+
+.createPage {
+  display: flex; }
+
+.create__col {
+  display: flex;
+  flex-direction: column; }
 
 .dice {
   padding: 1.2rem;

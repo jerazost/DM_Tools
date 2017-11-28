@@ -1,0 +1,88 @@
+
+
+.form__container{
+	flex-grow:1;
+	text-align: center;
+	color: white;
+}
+.form__ability_score{
+	background: $background;
+	padding: $m-size;
+	h3 {
+		margin-top: 0;
+	}
+	h2 {
+		display: inline;
+		padding: 0 $s-size;
+	}
+	button {
+		display: inline;
+	}
+}
+.form__row {
+	display: flex;
+}
+.form__col {
+	flex-grow: 1;
+}
+
+
+.formSize {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	width: 50%;
+}
+.formSize__option {
+	padding: $m-size;
+	display: flex;
+	flex-direction: column;
+	img {
+		filter: invert(100%);
+	}
+	h2 {
+		text-align: center;
+	}
+}
+
+.formSize__option:hover {
+	background: darken($light-background, 40%);
+	cursor: pointer;
+}
+
+.formListCard {
+	display: flex;
+	background: $background;
+	flex-wrap: wrap;
+	max-width: 60%;
+}
+
+.formListCard__item {
+	background: red;
+	color: white;
+	margin: $m-size;
+	padding: $s-size $l-size;
+	cursor: pointer;
+}
+.formListCard__item--active {
+	background: blue;
+	box-shadow: 0 0 .8em #867453;
+}
+
+.formMultipleOptionsCard {
+	background: $background;
+	font-size: $m-size;
+	form {
+		border: white solid 3px; 
+	};
+}
+.formMultipleOptionsCard__line {
+	padding: $m-size;
+	color: white;
+	label {
+		margin: $s-size
+	};
+	input {
+		margin-right: $s-size;
+	};
+}

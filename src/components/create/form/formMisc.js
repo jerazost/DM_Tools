@@ -9,17 +9,33 @@ export class FormMultipleOptions extends React.Component {
 			selectedValues: props.list.map(e => '')
 		}
 	}
+	//Each form gets an index in the first array.
+	//We use this index to set the selected value for that array.
+	//We then call the updateSelected callback with the final 
+	//one-dimensional array that contains only the selected value of each form 
+	handleChange = (e) => {
+		const index = e.currentTarget.dataset.index;
+		const value = e.target.value;
+		let tempValues = [...this.state.selectedValues]
+		tempValues[index] = value;
+		this.setState(() => ({selectedValues: tempValues}), 
+		() => {this.props.updateSelected(this.state.selectedValues)});
+	}
 	render() {
 		return (
 			<div>
 				<h2>Choose one from each</h2>
 				<div className="formMultipleOptionsCard">
 					{this.props.list.map((subList,i) => 
-						<form key={i} onChange={this.handleChange} 
+						<form key={i} data-index={i} onChange={this.handleChange}
 						className="formMultipleOptionsCard__line">
 							{subList.map((option, j) => 
-								<label key={j}>
-									<input type="checkbox" value={option}/>{option}
+								<label key={j} htmlFor={option}>
+									<input type="radio" 
+									id={option}
+									value={option}
+									checked={option === this.state.selectedValues[i]}
+									/>{option}
 								</label>
 							)}
 						</form>
@@ -28,7 +44,7 @@ export class FormMultipleOptions extends React.Component {
 			</div>
 		)
 	}
-} 
+}
 
 
 export class FormListSelect extends React.Component {

@@ -225,7 +225,24 @@
           "Charisma"
         ],
         "Skills": {
-          "Options": [],
+          "Options": [
+            "Acrobatics",
+            "Animal Handling",
+            "Athletics",
+            "Arcana",
+            "Deception",
+            "History",
+            "Insight",
+            "Intimidation",
+            "Investigation",
+            "Medicine",
+            "Nature",
+            "Perception",
+            "Persuasion",
+            "Religion",
+            "Stealth",
+            "Survival"
+          ],
           "Amount": 3
         }
       },
@@ -245,7 +262,7 @@
             "Lute",
             "any musical instrument"
           ],
-          "Leather armor and a dagger"
+          ["Leather armor and a dagger"]
         ]
       },
       "Features": {
@@ -1113,7 +1130,7 @@
             "Scimitar",
             "Simple melee weapon"
           ],
-          "Leather armor, Explorer's pack, Druidic Focus"
+          ["Leather armor, Explorer's pack, Druidic Focus"]
         ]
       },
       "Features": {
@@ -1837,7 +1854,7 @@
             "Dungeoneer's Pack",
             "Explorer's Pack"
           ],
-          "Darts(10)"
+          ["Darts(10)"]
         ]
       },
       "Features": {
@@ -2739,7 +2756,7 @@
             "Dungeoneer's Pack",
             "Explorer's Pack"
           ],
-          "2 Daggers"
+          ["2 Daggers"]
         ]
       },
       "Spellcasting": {
@@ -3219,7 +3236,7 @@
             "Dungeoneer's Pack",
             "Scholar's Pack"
           ],
-          "Leather Armor, Simple Weapon, 2 Daggers"
+          ["Leather Armor, Simple Weapon, 2 Daggers"]
         ]
       },
       "Level Table": {
@@ -3515,7 +3532,7 @@
             "Scholar's Pack",
             "Explorer's Pack"
           ],
-          "Spellbook"
+          ["Spellbook"]
         ]
       },
       "Spellcasting": {

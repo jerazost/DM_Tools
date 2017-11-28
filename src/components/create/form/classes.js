@@ -1,17 +1,5 @@
 import React from 'react';
 const classes = require('../../../data/classes.json');
-console.log(classes);
-
-// const CheckboxCard = props => (
-// 	<div>
-// 		{props.list.map((l, i) => 
-// 			<div key={i}>
-// 				<input id={l} type="checkbox"/>
-// 				<label for={l}>{l}</label>
-// 			</div>
-// 		)}
-// 	</div>
-// )
 
 const LevelTable = props => {
 	const tableHeads = Object.keys(props);

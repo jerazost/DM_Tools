@@ -1,3 +1,8 @@
+@import 'alignment';
+@import 'abilityScores';
+@import 'createRaces';
+@import 'createClasses';
+@import 'formMisc';
 
 .createPage {
 	padding: $l-size;
@@ -32,73 +37,7 @@
 	color: orange;
 	font-weight: 550;
 }
-.alignmentChart{
-	height: 25rem;
-	width: 25rem;
-	background: $light-background;
-	display: flex;
 
-}
-.alignmentChart__col{
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-}
-.alignmentChart__square{
-	border: solid 1px $background;
-	flex-grow: 1;
-	display: flex;
-	justify-content: center;
-	cursor: pointer;
-	h1 {
-		margin: 0;
-		align-self: center;
-		position: absolute;
-		color: darken($light-background, 30%);
-	}
-}
-.alignmentChart__square--active {
-	background: darken($light-background, 60%);
-	h1 {
-		color: orange;
-	}
-}
-.alignmentChart__square:hover {
-	background: darken($light-background, 40%);
-	h1 {
-		color: orange;
-	}
-}
-.abilityScores{
-	margin: $m-size 0;
-	display:flex;
-	flex-direction: row;
-}
-.form__container{
-	flex-grow:1;
-	text-align: center;
-	color: white;
-}
-.form__ability_score{
-	background: $background;
-	padding: $m-size;
-	h3 {
-		margin-top: 0;
-	}
-	h2 {
-		display: inline;
-		padding: 0 $s-size;
-	}
-	button {
-		display: inline;
-	}
-}
-.form__row {
-	display: flex;
-}
-.form__col {
-	flex-grow: 1;
-}
 .actionPrompt {
 	padding: $m-size;
 	background: $background;
@@ -113,132 +52,13 @@
 		margin-right:$m-size;
 	}
 }
-.formSize {
-	display: flex;
-	align-items: flex-end;
-	justify-content: space-around;
-	width: 50%;
-}
-.formSize__option {
-	padding: $m-size;
-	display: flex;
-	flex-direction: column;
-	img {
-		filter: invert(100%);
-	}
-	h2 {
-		text-align: center;
-	}
-}
 
-.formSize__option:hover {
-	background: darken($light-background, 40%);
-	cursor: pointer;
-}
 .createPage {
 	display: flex;
 }
-.races{
-	display: flex;
-	flex-wrap: wrap;
-	width: 55%;
-	height: 45%;
-}
-.races__raceCard {
-	h2 {
-		display: inline;
-	}
-	flex-grow: 1;
-}
-.races__raceCard--preview {
-	width: 20rem;
-	height: 8rem;
-}
-.races__raceCard--full {
-	padding-top: $l-size;
-	h1 {
-		font-size: 5rem;
-		display: inline;
-	}
-}
-.races__raceCard--preview:hover {
-	box-shadow: 0 0 2.5em darken($paper, 30%);
-	cursor: pointer;
-}
-.races__raceCard__icon {
-	width: 6rem;
-	margin-right: 2rem;
-	filter: invert(80%);
-}
+
 .create__col {
 	display: flex;
 	flex-direction: column;
 }
-.classCard {
-	text-align: left;
-	margin:  .5rem 2rem;
-	display: inline-block;
-	min-width: 10%;
-	background: $paper;
-	padding: 5px 10px 20px;
-	box-shadow: 0 0 .8em #867453;
-	h2 {
-		font-size: 2.5rem;
-		display: inline;
-		margin-right: $m-size;
-	}
-}
 
-.classCard:hover {
-	box-shadow: 0 0 2.5em darken($paper, 30%);
-	cursor: pointer;
-}
-
-.classCard__icon {
-	width: 3rem;
-	filter: invert(80%);
-	float: right;
-}
-
-.levelTable {
-	background: $paper;
-}
-
-.paperCard {
-	background: $paper;
-	padding: 5px 10px 20px;
-	box-shadow: 0 0 .8em #867453;
-}
-.formListCard {
-	display: flex;
-	background: $background;
-	width: 40rem;
-	flex-wrap: wrap;
-}
-
-.formListCard__item {
-	background: red;
-	color: white;
-	margin: $m-size;
-	padding: $s-size $l-size;
-}
-.formListCard__item--active {
-	background: blue;
-	box-shadow: 0 0 .8em #867453;
-}
-
-.formMultipleOptionsCard {
-	background: $background;
-	font-size: $m-size;
-}
-.formMultipleOptionsCard__line {
-	display: flex;
-	padding: $m-size;
-	color: white;
-	label {
-		margin: $s-size
-	}
-	input {
-		margin-right: $s-size;
-	}
-}
