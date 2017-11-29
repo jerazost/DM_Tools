@@ -289,31 +289,40 @@
                 "One child has hired an assassin to kill the orphanage leader",
                 "One child is the leader of a notorious street gang",
                 "The leader of the orphanage is training the children to believe in a fake god",
-                "The "
+                "There's an orphan with secret magical powers",
+                "The orphanage leader is cruel and abusive"
               ] 
             },
             "Hidden slavers' den":{
               "details":[
-
+                "There are several empty cages",
+                "The floors are dusty",
+                "Every resident has the same tattoo on their arms",
+                "It is obvious that the residents are secretly talking about your party to each other",
+                "There is a pair of handcuffs on the floor"
               ],
               "secret":[
-
-              ] 
-            },
-            "Front for a secret cult":{
-              "details":[
-
-              ],
-              "secret":[
-
+                "There is a room full of slaves in the back of the house",
+                "The owner is attempting to enslave the party",
+                "A resident is trying to murder the others to keep all the money themself",
+                "There is a locked room with 10,000 gold pieces in it",
+                "The slavers are about to hold an auction behind their house"
               ] 
             },
             "Lavish, guarded mansion":{
               "details":[
-
+                "The walls are lined with portraits of the residents",
+                "Every piece of furniture is coated in gold",
+                "There is a servant in every room",
+                "All the residents speak slowly",
+                "The house layout is confusing and maze-like"
               ],
               "secret":[
-
+                "A seceret lever on the outside opens a hidden passage to the basement",
+                "A resident is planning to run away with someone from a lower class",
+                "The residents are close to running out of money",
+                "The house has a magical item hidden under one of the beds",
+                "One maid is having an affair with a resident"
               ] 
             }
           },
