@@ -428,33 +428,39 @@
               ],
               "secret":[
                 "This is the home of a beast",
-                "This is a popular spot for malicious deals",
+                "This is a popular spot for illegal dealings",
                 "The warehouse seems to enjoy the company",
                 "This is just some persons warehouse"
               ] 
             },
             "Jewels, guarded":{
               "details":[
-
+                "A heap of jewels is guarded by a young dragon"
               ],
               "secret":[
-
+                "All the jewels are counterfit"
               ] 
             },
             "Gold pieces, guarded":{
               "details":[
-
+                "The gold is guarded by thugs from a criminal organization",
+                "The gold is being loaded into rice sacks",
+                "The gold is being sorted into piles by slaves. Thugs are watching over them"
               ],
               "secret":[
-
+                "The gold is counterfit",
+                "The gold is in the process of being laundered",
+                "The owner of the warehouse is a banker who is stealing from their employer"
               ] 
             },
             "Enchanted items, guarded":{
               "details":[
-
+                "A group of acolytes are enchanting a mysterious orb at an altar in the center of the space",
+                "A monster worships a sentient magic item"
               ],
               "secret":[
-
+                "The item(s) are cursed",
+                "The items(s) belong to a powerful organization who will fight to retrieve them"
               ] 
             },
             "Acorns":{
@@ -683,7 +689,7 @@
           "type": {
             "Pawnshop":{
               "details":[
-
+                
               ],
               "secret":[
 
