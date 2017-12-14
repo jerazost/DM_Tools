@@ -15,19 +15,28 @@ const pickRandArr = list => {
 }
 
 const generateBuilding = () => {
-    const buildingKey = pickRandObjKey(buildings);
-    const randomBuilding = buildings[buildingKey];
-    const typeKey = pickRandObjKey(randomBuilding.type);
-    const randomType = randomBuilding.type[typeKey];
-    console.log(randomType);
-    return {
-        name: capFirst(buildingKey),
-        typeText: capFirst(typeKey),
-        size: pickRandArr(randomBuilding.size),
-        detail: pickRandArr(randomType.detail),
-        secret: pickRandArr(randomType.secret),
-        generalFeature: pickRandArr(randomBuilding.general_feature)
-    }  
+    let loop = true;
+    while(loop){
+        loop = false;
+        try{
+            const buildingKey = pickRandObjKey(buildings);
+            const randomBuilding = buildings[buildingKey];
+            const typeKey = pickRandObjKey(randomBuilding.type);
+            const randomType = randomBuilding.type[typeKey];
+            console.log(randomType);
+            let building = {
+                name: capFirst(buildingKey),
+                typeText: capFirst(typeKey),
+                size: pickRandArr(randomBuilding.size),
+                detail: pickRandArr(randomType.detail),
+                secret: pickRandArr(randomType.secret),
+                generalFeature: pickRandArr(randomBuilding.general_feature)
+            }
+            return building;
+        }catch(e){
+            loop = true;
+        }
+    }
 }
 
 class BuildingGenerator extends React.Component {
